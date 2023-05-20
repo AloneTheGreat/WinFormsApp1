@@ -18,3 +18,27 @@ F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\ref\Win
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.HomeForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.DeleteForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserDetailForm.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.DeleteForm.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\library_MS.Form10.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\library_MS.Form11.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\library_MS.Form3.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\library_MS.Form6.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.HomeForm.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserDetailForm.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Users.resources
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfoInputs.cache
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.AssemblyInfo.cs
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\refint\WinFormsApp1.dll
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.exe
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.deps.json
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.genruntimeconfig.cache
+C:\Users\Ahmed Elshikh\source\repos\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll

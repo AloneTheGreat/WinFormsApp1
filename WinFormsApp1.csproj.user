@@ -4,6 +4,18 @@
     <Compile Update="DeleteForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Form10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form6.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="HomeForm.cs">
       <SubType>Form</SubType>
     </Compile>
