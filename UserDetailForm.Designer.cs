@@ -32,6 +32,7 @@
             btnReturn = new DataGridViewButtonColumn();
             label1 = new Label();
             button1 = new Button();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)grdBorrowed).BeginInit();
             SuspendLayout();
             // 
@@ -72,11 +73,19 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(529, 137);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(205, 23);
+            textBox1.TabIndex = 3;
+            // 
             // UserDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(grdBorrowed);
@@ -94,5 +103,6 @@
         private DataGridViewButtonColumn btnReturn;
         private Label label1;
         private Button button1;
+        private TextBox textBox1;
     }
 }
