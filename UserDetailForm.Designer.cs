@@ -33,6 +33,7 @@
             label1 = new Label();
             button1 = new Button();
             textBox1 = new TextBox();
+            button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)grdBorrowed).BeginInit();
             SuspendLayout();
             // 
@@ -80,11 +81,22 @@
             textBox1.Size = new Size(205, 23);
             textBox1.TabIndex = 3;
             // 
+            // button2
+            // 
+            button2.Location = new Point(49, 23);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 4;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // UserDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
             Controls.Add(textBox1);
             Controls.Add(button1);
             Controls.Add(label1);
@@ -104,5 +116,6 @@
         private Label label1;
         private Button button1;
         private TextBox textBox1;
+        private Button button2;
     }
 }
