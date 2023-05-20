@@ -28,53 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.grdBorrowed = new System.Windows.Forms.DataGridView();
-            this.btnReturn = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.grdBorrowed)).BeginInit();
-            this.SuspendLayout();
+            grdBorrowed = new DataGridView();
+            btnReturn = new DataGridViewButtonColumn();
+            label1 = new Label();
+            button1 = new Button();
+            ((System.ComponentModel.ISupportInitialize)grdBorrowed).BeginInit();
+            SuspendLayout();
             // 
             // grdBorrowed
             // 
-            this.grdBorrowed.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grdBorrowed.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.btnReturn});
-            this.grdBorrowed.Location = new System.Drawing.Point(12, 223);
-            this.grdBorrowed.Name = "grdBorrowed";
-            this.grdBorrowed.RowTemplate.Height = 25;
-            this.grdBorrowed.Size = new System.Drawing.Size(776, 215);
-            this.grdBorrowed.TabIndex = 0;
-            this.grdBorrowed.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdBorrowed_CellContentClick);
+            grdBorrowed.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grdBorrowed.Columns.AddRange(new DataGridViewColumn[] { btnReturn });
+            grdBorrowed.Location = new Point(12, 223);
+            grdBorrowed.Name = "grdBorrowed";
+            grdBorrowed.RowTemplate.Height = 25;
+            grdBorrowed.Size = new Size(776, 215);
+            grdBorrowed.TabIndex = 0;
+            grdBorrowed.CellContentClick += grdBorrowed_CellContentClick;
             // 
             // btnReturn
             // 
-            this.btnReturn.HeaderText = "";
-            this.btnReturn.Name = "btnReturn";
-            this.btnReturn.Text = "Return";
-            this.btnReturn.UseColumnTextForButtonValue = true;
+            btnReturn.HeaderText = "";
+            btnReturn.Name = "btnReturn";
+            btnReturn.Text = "Return";
+            btnReturn.UseColumnTextForButtonValue = true;
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(373, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "User Detils";
+            label1.AutoSize = true;
+            label1.Location = new Point(373, 80);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 15);
+            label1.TabIndex = 1;
+            label1.Text = "User Detils";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(227, 124);
+            button1.Name = "button1";
+            button1.Size = new Size(249, 72);
+            button1.TabIndex = 2;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // UserDetailForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.grdBorrowed);
-            this.Name = "UserDetailForm";
-            this.Text = "UserDetail";
-            ((System.ComponentModel.ISupportInitialize)(this.grdBorrowed)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(button1);
+            Controls.Add(label1);
+            Controls.Add(grdBorrowed);
+            Name = "UserDetailForm";
+            Text = "UserDetail";
+            ((System.ComponentModel.ISupportInitialize)grdBorrowed).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         private DataGridView grdBorrowed;
@@ -83,5 +93,6 @@
 
         private DataGridViewButtonColumn btnReturn;
         private Label label1;
+        private Button button1;
     }
 }
