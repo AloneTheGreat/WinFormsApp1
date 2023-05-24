@@ -28,78 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
+            BKname = new TextBox();
+            BKAuthor = new TextBox();
+            BKISBN = new TextBox();
+            BKCategory = new ComboBox();
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            button1 = new Button();
+            btnSaveAdd = new Button();
+            BKDes = new TextBox();
+            label6 = new Label();
+            BKNOS = new NumericUpDown();
+            lblImage = new Label();
+            btnBrowse = new Button();
+            ofd = new OpenFileDialog();
+            lblAddError = new Label();
+            ((System.ComponentModel.ISupportInitialize)BKNOS).BeginInit();
             SuspendLayout();
             // 
-            // textBox1
+            // BKname
             // 
-            textBox1.Location = new Point(181, 53);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(452, 23);
-            textBox1.TabIndex = 0;
+            BKname.Location = new Point(181, 41);
+            BKname.Name = "BKname";
+            BKname.Size = new Size(452, 23);
+            BKname.TabIndex = 0;
             // 
-            // textBox2
+            // BKAuthor
             // 
-            textBox2.Location = new Point(181, 120);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(452, 23);
-            textBox2.TabIndex = 1;
+            BKAuthor.Location = new Point(181, 94);
+            BKAuthor.Name = "BKAuthor";
+            BKAuthor.Size = new Size(452, 23);
+            BKAuthor.TabIndex = 1;
             // 
-            // textBox3
+            // BKISBN
             // 
-            textBox3.Location = new Point(181, 193);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(452, 23);
-            textBox3.TabIndex = 2;
+            BKISBN.Location = new Point(181, 149);
+            BKISBN.Name = "BKISBN";
+            BKISBN.Size = new Size(452, 23);
+            BKISBN.TabIndex = 2;
             // 
-            // comboBox1
+            // BKCategory
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(181, 266);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(217, 23);
-            comboBox1.TabIndex = 3;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(181, 325);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 4;
+            BKCategory.FormattingEnabled = true;
+            BKCategory.Location = new Point(181, 202);
+            BKCategory.Name = "BKCategory";
+            BKCategory.Size = new Size(217, 23);
+            BKCategory.TabIndex = 3;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(49, 56);
+            label1.Location = new Point(44, 44);
             label1.Name = "label1";
-            label1.Size = new Size(72, 15);
+            label1.Size = new Size(59, 15);
             label1.TabIndex = 5;
-            label1.Text = "Book Name ";
+            label1.Text = "Book Title";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(44, 123);
+            label2.Location = new Point(44, 97);
             label2.Name = "label2";
-            label2.Size = new Size(86, 15);
+            label2.Size = new Size(74, 15);
             label2.TabIndex = 6;
-            label2.Text = "Book Publisher";
+            label2.Text = "Book Author";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(65, 201);
+            label3.Location = new Point(44, 152);
             label3.Name = "label3";
             label3.Size = new Size(32, 15);
             label3.TabIndex = 7;
@@ -108,7 +107,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(65, 266);
+            label4.Location = new Point(44, 205);
             label4.Name = "label4";
             label4.Size = new Size(55, 15);
             label4.TabIndex = 8;
@@ -117,55 +116,129 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(65, 333);
+            label5.Location = new Point(44, 260);
             label5.Name = "label5";
-            label5.Size = new Size(52, 15);
+            label5.Size = new Size(65, 15);
             label5.TabIndex = 9;
-            label5.Text = "NCopies";
+            label5.Text = "No. Copies";
             // 
-            // button1
+            // btnSaveAdd
             // 
-            button1.Location = new Point(361, 361);
-            button1.Name = "button1";
-            button1.Size = new Size(126, 55);
-            button1.TabIndex = 10;
-            button1.Text = "Save Book";
-            button1.UseVisualStyleBackColor = true;
+            btnSaveAdd.Location = new Point(327, 459);
+            btnSaveAdd.Name = "btnSaveAdd";
+            btnSaveAdd.Size = new Size(145, 46);
+            btnSaveAdd.TabIndex = 10;
+            btnSaveAdd.Text = "Add Book";
+            btnSaveAdd.UseVisualStyleBackColor = true;
+            btnSaveAdd.Click += BtnSaveAdd_Click;
             // 
-            // Form10
+            // BKDes
+            // 
+            BKDes.Location = new Point(181, 309);
+            BKDes.Multiline = true;
+            BKDes.Name = "BKDes";
+            BKDes.Size = new Size(452, 65);
+            BKDes.TabIndex = 2;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(44, 330);
+            label6.Name = "label6";
+            label6.Size = new Size(67, 15);
+            label6.TabIndex = 7;
+            label6.Text = "Description";
+            // 
+            // BKNOS
+            // 
+            BKNOS.Location = new Point(181, 258);
+            BKNOS.Name = "BKNOS";
+            BKNOS.Size = new Size(120, 23);
+            BKNOS.TabIndex = 11;
+            // 
+            // lblImage
+            // 
+            lblImage.AutoSize = true;
+            lblImage.Location = new Point(44, 418);
+            lblImage.Name = "lblImage";
+            lblImage.Size = new Size(40, 15);
+            lblImage.TabIndex = 12;
+            lblImage.Text = "Image";
+            // 
+            // btnBrowse
+            // 
+            btnBrowse.Location = new Point(181, 407);
+            btnBrowse.Name = "btnBrowse";
+            btnBrowse.Size = new Size(82, 37);
+            btnBrowse.TabIndex = 13;
+            btnBrowse.Text = "Browse";
+            btnBrowse.UseVisualStyleBackColor = true;
+            btnBrowse.Click += btnBrowse_Click;
+            // 
+            // ofd
+            // 
+            ofd.Title = "Image";
+            // 
+            // lblAddError
+            // 
+            lblAddError.AutoSize = true;
+            lblAddError.Font = new Font("Segoe UI", 8F, FontStyle.Underline, GraphicsUnit.Point);
+            lblAddError.ForeColor = Color.Red;
+            lblAddError.Location = new Point(327, 517);
+            lblAddError.Name = "lblAddError";
+            lblAddError.Size = new Size(32, 13);
+            lblAddError.TabIndex = 14;
+            lblAddError.Text = "Error";
+            lblAddError.Visible = false;
+            // 
+            // AddBookForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            ClientSize = new Size(800, 550);
+            Controls.Add(lblAddError);
+            Controls.Add(btnBrowse);
+            Controls.Add(lblImage);
+            Controls.Add(BKNOS);
+            Controls.Add(btnSaveAdd);
             Controls.Add(label5);
             Controls.Add(label4);
+            Controls.Add(label6);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Name = "Form10";
-            Text = "Form10";
+            Controls.Add(BKCategory);
+            Controls.Add(BKDes);
+            Controls.Add(BKISBN);
+            Controls.Add(BKAuthor);
+            Controls.Add(BKname);
+            Name = "AddBookForm";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "AddBook";
+            FormClosed += BooksForm_FormClosed;
+            ((System.ComponentModel.ISupportInitialize)BKNOS).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
-        private ComboBox comboBox1;
-        private ComboBox comboBox2;
+        private TextBox BKname;
+        private TextBox BKAuthor;
+        private TextBox BKISBN;
+        private ComboBox BKCategory;
         private Label label1;
         private Label label2;
         private Label label3;
         private Label label4;
         private Label label5;
-        private Button button1;
+        private Button btnSaveAdd;
+        private TextBox BKDes;
+        private Label label6;
+        private NumericUpDown BKNOS;
+        private Label lblImage;
+        private Button btnBrowse;
+        private OpenFileDialog ofd;
+        private Label lblAddError;
     }
 }

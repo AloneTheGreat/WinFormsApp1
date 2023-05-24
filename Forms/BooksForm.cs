@@ -3,12 +3,14 @@ using System.Data;
 using System.Windows.Forms;
 using WinFormsApp1.Models;
 using System.Collections;
+using Library.Models;
+using static WinFormsApp1.BooksForm;
+using static System.Reflection.Metadata.BlobBuilder;
 
 namespace WinFormsApp1
 {
     public partial class BooksForm : Form
     {
-
         public BooksForm()
         {
             InitializeComponent();
@@ -20,21 +22,7 @@ namespace WinFormsApp1
 
         public void GetBooks(int index)
         {
-            AppContext cn;
-            using (cn = new AppContext())
-            {
-                if (index == 0)
-                {
-                    var books = cn.Books.ToList();
-                    grdBooks.DataSource = books;
-                }
-                else
-                {
-                    var books = cn.Books.Where(b => b.Category.Id == index).ToList();
-                    grdBooks.DataSource = books;
-                }
-            }
-            grdBooks.Refresh();
+            GetBooks(index, "");
         }
 
         public void GetBooks(int index, string search)
@@ -44,16 +32,41 @@ namespace WinFormsApp1
             {
                 if (index == 0)
                 {
-                    var books = cn.Books.Where(b => b.Title.StartsWith(search)).ToList();
+                    var books = (from b in cn.Books
+                                 where b.Title.StartsWith(search)
+                                 select new
+                                 {
+                                     Author = b.Author,
+                                     Title = b.Title,
+                                     Description = b.Description,
+                                     PathOfImage = b.PathOfImage,
+                                     Category = b.Category.Name,
+                                     TotalCopies = b.TotalCopies,
+                                     AvailableCopies = b.AvailableCopies,
+                                     ISBN = b.ISBN,
+                                 }).ToList();
                     grdBooks.DataSource = books;
+                    grdBooks.Refresh();
                 }
                 else
                 {
-                    var books = cn.Books.Where(b => b.Category.Id == index).Where(b => b.Title.StartsWith(search)).ToList();
-                    grdBooks.DataSource = books;
+                    var books = (from b in cn.Books
+                                 where b.Category.Id == index
+                                 where b.Title.StartsWith(search)
+                                 select new
+                                 {
+                                     Author = b.Author,
+                                     Title = b.Title,
+                                     Description = b.Description,
+                                     PathOfImage = b.PathOfImage,
+                                     Category = b.Category.Name,
+                                     TotalCopies = b.TotalCopies,
+                                     AvailableCopies = b.AvailableCopies,
+                                     ISBN = b.ISBN,
+                                 }).ToList(); grdBooks.DataSource = books;
+                    grdBooks.Refresh();
                 }
             }
-            grdBooks.Refresh();
         }
 
         public void GetCategories()
@@ -72,21 +85,25 @@ namespace WinFormsApp1
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void GrdBooks_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             BookDetailForm f = new BookDetailForm();
             f.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void BtnAddBook_Click(object sender, EventArgs e)
         {
             AddBookForm fn = new AddBookForm();
-            fn.Show();
+            fn.ButtonClicked += new EventHandler(AddBookForm_ButtonClicked);
+            fn.Show(this);
+            btnAddBook.Enabled = false;
         }
 
-        private void BooksForm_Load(object sender, EventArgs e)
+        private void AddBookForm_ButtonClicked(object? sender, EventArgs e)
         {
-
+            GetCategories();
+            GetBooks(0);
+            btnAddBook.Enabled = true;
         }
 
         private void categories_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,7 +112,7 @@ namespace WinFormsApp1
             GetBooks(index);
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
         {
             string text = txtSearch.Text;
             int index = (int)categories.SelectedValue;

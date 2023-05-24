@@ -30,69 +30,59 @@
         {
             grdUser = new DataGridView();
             panel1 = new Panel();
-            btnSearch = new Button();
-            txtSearch = new TextBox();
-            panel2 = new Panel();
             btnAddUser = new Button();
+            txtSearch = new TextBox();
             ((System.ComponentModel.ISupportInitialize)grdUser).BeginInit();
             panel1.SuspendLayout();
-            panel2.SuspendLayout();
             SuspendLayout();
             // 
             // grdUser
             // 
+            grdUser.BackgroundColor = Color.DimGray;
             grdUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdUser.Dock = DockStyle.Fill;
-            grdUser.Location = new Point(0, 47);
+            grdUser.Location = new Point(0, 54);
             grdUser.Name = "grdUser";
             grdUser.RowTemplate.Height = 25;
-            grdUser.Size = new Size(800, 337);
+            grdUser.Size = new Size(800, 396);
             grdUser.TabIndex = 0;
+            grdUser.RowHeaderMouseDoubleClick += GrdUser_RowHeaderMouseDoubleClick;
             // 
             // panel1
             // 
-            panel1.Controls.Add(btnSearch);
+            panel1.BackColor = Color.DarkSlateGray;
+            panel1.Controls.Add(btnAddUser);
             panel1.Controls.Add(txtSearch);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
-            panel1.Size = new Size(800, 47);
+            panel1.Size = new Size(800, 54);
             panel1.TabIndex = 3;
-            // 
-            // btnSearch
-            // 
-            btnSearch.Location = new Point(370, 12);
-            btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(75, 23);
-            btnSearch.TabIndex = 3;
-            btnSearch.Text = "Search";
-            btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // txtSearch
-            // 
-            txtSearch.Location = new Point(12, 12);
-            txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(331, 23);
-            txtSearch.TabIndex = 2;
-            txtSearch.Tag = "";
-            // 
-            // panel2
-            // 
-            panel2.Controls.Add(btnAddUser);
-            panel2.Dock = DockStyle.Bottom;
-            panel2.Location = new Point(0, 384);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(800, 66);
-            panel2.TabIndex = 4;
             // 
             // btnAddUser
             // 
-            btnAddUser.Location = new Point(12, 8);
+            btnAddUser.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btnAddUser.BackColor = Color.RoyalBlue;
+            btnAddUser.FlatStyle = FlatStyle.Flat;
+            btnAddUser.ForeColor = Color.White;
+            btnAddUser.Location = new Point(707, 12);
             btnAddUser.Name = "btnAddUser";
-            btnAddUser.Size = new Size(120, 51);
-            btnAddUser.TabIndex = 3;
+            btnAddUser.Size = new Size(81, 30);
+            btnAddUser.TabIndex = 4;
             btnAddUser.Text = "Add User";
-            btnAddUser.UseVisualStyleBackColor = true;
+            btnAddUser.UseVisualStyleBackColor = false;
+            btnAddUser.Click += btnAddUser_Click;
+            // 
+            // txtSearch
+            // 
+            txtSearch.BackColor = Color.LightGray;
+            txtSearch.Location = new Point(12, 17);
+            txtSearch.Name = "txtSearch";
+            txtSearch.PlaceholderText = "Search";
+            txtSearch.Size = new Size(331, 23);
+            txtSearch.TabIndex = 2;
+            txtSearch.Tag = "";
+            txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // UsersForm
             // 
@@ -101,7 +91,6 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ClientSize = new Size(800, 450);
             Controls.Add(grdUser);
-            Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "UsersForm";
@@ -110,16 +99,13 @@
             ((System.ComponentModel.ISupportInitialize)grdUser).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            panel2.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
         private DataGridView grdUser;
         private Panel panel1;
-        private Button btnSearch;
         private TextBox txtSearch;
-        private Panel panel2;
         private Button btnAddUser;
     }
 }

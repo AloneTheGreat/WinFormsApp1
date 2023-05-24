@@ -32,8 +32,9 @@
             button2 = new Button();
             button3 = new Button();
             label1 = new Label();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            label2 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -69,32 +70,41 @@
             label1.AutoSize = true;
             label1.Location = new Point(41, 21);
             label1.Name = "label1";
-            label1.Size = new Size(74, 15);
+            label1.Size = new Size(35, 15);
             label1.TabIndex = 4;
-            label1.Text = "book details ";
+            label1.Text = "Title :";
             // 
-            // dataGridView1
+            // label2
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(41, 39);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(700, 300);
-            dataGridView1.TabIndex = 5;
+            label2.AutoSize = true;
+            label2.Location = new Point(90, 22);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 5;
+            label2.Text = "label2";
             // 
-            // Form6
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(619, 21);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(158, 199);
+            pictureBox1.TabIndex = 6;
+            pictureBox1.TabStop = false;
+            // 
+            // BookDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(dataGridView1);
+            Controls.Add(pictureBox1);
+            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
-            Name = "Form6";
+            Name = "BookDetailForm";
             Text = "Form6";
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -104,6 +114,7 @@
         private Button button2;
         private Button button3;
         private Label label1;
-        private DataGridView dataGridView1;
+        private Label label2;
+        private PictureBox pictureBox1;
     }
 }

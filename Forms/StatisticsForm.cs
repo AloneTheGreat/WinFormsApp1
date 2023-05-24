@@ -24,6 +24,30 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            AppContext cn = new AppContext();
+            using (cn)
+            {
+                var usercount = cn.Users.Count();
+                userccount.Visible = true;
+                userccount.Text = "Number of users";
+                usercounttextbox.Text = usercount.ToString();
+
+            }
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AppContext cn = new AppContext();
+            using (cn)
+            {
+
+                var boocount = cn.Books.Count();
+                userccount.Visible = true;
+                userccount.Text = "Number of books";
+                usercounttextbox.Text = boocount.ToString();
+
+            }
 
         }
     }

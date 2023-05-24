@@ -17,5 +17,7 @@ namespace WinFormsApp1.Models
         public bool IsReturned { get; set; }
 
         public int Duration { get; set; }
+
+        public DateTime BorrowedAt { get; set; }
     }
 }

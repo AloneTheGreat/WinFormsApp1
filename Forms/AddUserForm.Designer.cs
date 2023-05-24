@@ -1,6 +1,6 @@
 ﻿namespace WinFormsApp1
-{ 
-    partial class Form1
+{
+    partial class adduserForm
     {
         /// <summary>
         /// Required designer variable.
@@ -29,78 +29,161 @@
         private void InitializeComponent()
         {
             label4 = new Label();
-            textBox1 = new TextBox();
+            SSN = new TextBox();
             label3 = new Label();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            newusername = new TextBox();
+            CreateNewUser = new Button();
+            label1 = new Label();
+            phonetext = new TextBox();
+            Emailtext = new TextBox();
+            label2 = new Label();
+            label5 = new Label();
+            lblAddError = new Label();
             SuspendLayout();
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label4.ForeColor = SystemColors.GrayText;
-            label4.Location = new Point(81, 170);
+            label4.Location = new Point(86, 146);
+            label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(88, 20);
             label4.TabIndex = 7;
             label4.Text = "National ID";
             // 
-            // textBox1
+            // SSN
             // 
-            textBox1.Location = new Point(85, 191);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(225, 20);
-            textBox1.TabIndex = 5;
+            SSN.Location = new Point(86, 169);
+            SSN.Margin = new Padding(4, 3, 4, 3);
+            SSN.Multiline = true;
+            SSN.Name = "SSN";
+            SSN.Size = new Size(262, 22);
+            SSN.TabIndex = 5;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             label3.ForeColor = SystemColors.GrayText;
-            label3.Location = new Point(81, 107);
+            label3.Location = new Point(86, 73);
+            label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(89, 20);
             label3.TabIndex = 8;
             label3.Text = "User Name";
             // 
-            // textBox2
+            // newusername
             // 
-            textBox2.Location = new Point(85, 128);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(225, 20);
-            textBox2.TabIndex = 6;
+            newusername.Location = new Point(86, 96);
+            newusername.Margin = new Padding(4, 3, 4, 3);
+            newusername.Multiline = true;
+            newusername.Name = "newusername";
+            newusername.Size = new Size(262, 22);
+            newusername.TabIndex = 6;
             // 
-            // button1
+            // CreateNewUser
             // 
-            button1.BackColor = Color.FromArgb(0, 0, 64);
-            button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.White;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
-            button1.FlatStyle = FlatStyle.Flat;
-            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(255, 128, 0);
-            button1.Location = new Point(85, 270);
-            button1.Name = "button1";
-            button1.Size = new Size(225, 35);
-            button1.TabIndex = 9;
-            button1.Text = "Create ";
-            button1.UseVisualStyleBackColor = false;
+            CreateNewUser.BackColor = Color.FromArgb(0, 0, 64);
+            CreateNewUser.FlatAppearance.BorderSize = 0;
+            CreateNewUser.FlatAppearance.MouseDownBackColor = Color.White;
+            CreateNewUser.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            CreateNewUser.FlatStyle = FlatStyle.Flat;
+            CreateNewUser.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            CreateNewUser.ForeColor = Color.FromArgb(255, 128, 0);
+            CreateNewUser.Location = new Point(86, 399);
+            CreateNewUser.Margin = new Padding(4, 3, 4, 3);
+            CreateNewUser.Name = "CreateNewUser";
+            CreateNewUser.Size = new Size(262, 40);
+            CreateNewUser.TabIndex = 9;
+            CreateNewUser.Text = "Create ";
+            CreateNewUser.UseVisualStyleBackColor = false;
+            CreateNewUser.Click += button1_Click;
             // 
-            // Form1
+            // label1
             // 
-            AutoScaleDimensions = new SizeF(6F, 13F);
+            label1.AutoSize = true;
+            label1.Location = new Point(84, 318);
+            label1.Name = "label1";
+            label1.Size = new Size(0, 15);
+            label1.TabIndex = 10;
+            // 
+            // phonetext
+            // 
+            phonetext.Location = new Point(86, 237);
+            phonetext.Margin = new Padding(4, 3, 4, 3);
+            phonetext.Multiline = true;
+            phonetext.Name = "phonetext";
+            phonetext.Size = new Size(262, 22);
+            phonetext.TabIndex = 5;
+            // 
+            // Emailtext
+            // 
+            Emailtext.Location = new Point(86, 302);
+            Emailtext.Margin = new Padding(4, 3, 4, 3);
+            Emailtext.Multiline = true;
+            Emailtext.Name = "Emailtext";
+            Emailtext.Size = new Size(262, 22);
+            Emailtext.TabIndex = 5;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = SystemColors.GrayText;
+            label2.Location = new Point(86, 214);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(115, 20);
+            label2.TabIndex = 8;
+            label2.Text = "Phone Number";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor = SystemColors.GrayText;
+            label5.Location = new Point(86, 279);
+            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(48, 20);
+            label5.TabIndex = 8;
+            label5.Text = "Email";
+            // 
+            // lblAddError
+            // 
+            lblAddError.AutoSize = true;
+            lblAddError.Font = new Font("Segoe UI", 8F, FontStyle.Underline, GraphicsUnit.Point);
+            lblAddError.ForeColor = Color.Red;
+            lblAddError.Location = new Point(86, 451);
+            lblAddError.Name = "lblAddError";
+            lblAddError.Size = new Size(32, 13);
+            lblAddError.TabIndex = 15;
+            lblAddError.Text = "Error";
+            lblAddError.Visible = false;
+            // 
+            // adduserForm
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(369, 450);
-            Controls.Add(button1);
+            ClientSize = new Size(430, 519);
+            Controls.Add(lblAddError);
+            Controls.Add(label1);
+            Controls.Add(CreateNewUser);
             Controls.Add(label4);
-            Controls.Add(textBox1);
+            Controls.Add(Emailtext);
+            Controls.Add(phonetext);
+            Controls.Add(SSN);
+            Controls.Add(label5);
+            Controls.Add(label2);
             Controls.Add(label3);
-            Controls.Add(textBox2);
-            Name = "Form1";
+            Controls.Add(newusername);
+            Margin = new Padding(4, 3, 4, 3);
+            Name = "adduserForm";
+            StartPosition = FormStartPosition.CenterParent;
             Text = "Add New User";
+            FormClosed += AdduserForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -108,10 +191,16 @@
         #endregion
 
         private Label label4;
-        private TextBox textBox1;
+        private TextBox SSN;
         private Label label3;
-        private TextBox textBox2;
-        private Button button1;
+        private TextBox newusername;
+        private Button CreateNewUser;
+        private Label label1;
+        private TextBox phonetext;
+        private TextBox Emailtext;
+        private Label label2;
+        private Label label5;
+        private Label lblAddError;
     }
 }
 
