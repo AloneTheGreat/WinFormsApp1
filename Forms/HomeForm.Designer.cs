@@ -38,6 +38,7 @@
             // 
             // menuStrip
             // 
+            menuStrip.BackColor = Color.WhiteSmoke;
             menuStrip.Items.AddRange(new ToolStripItem[] { booksToolStripMenuItem, usersToolStripMenuItem, statisticsToolStripMenuItem });
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
@@ -78,6 +79,7 @@
             // 
             AutoScaleMode = AutoScaleMode.Inherit;
             AutoSize = true;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(menuStrip);

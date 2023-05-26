@@ -4,6 +4,7 @@ namespace WinFormsApp1
 {
     public partial class UsersForm : Form
     {
+        internal static int userID;
         public UsersForm()
         {
             InitializeComponent();
@@ -17,8 +18,18 @@ namespace WinFormsApp1
             AppContext cn;
             using (cn = new AppContext())
             {
-                var users = cn.Users.ToList();
+                var users = (from u in cn.Users
+                             select new
+                             {
+                                 Id = u.ID,
+                                 Name = u.Name,
+                                 Email = u.Email,
+                                 SSN = u.SSN,
+                                 Phone = u.Phone
+                             }).ToList();
+
                 grdUser.DataSource = users;
+                grdUser.Refresh();
             }
         }
 
@@ -30,26 +41,28 @@ namespace WinFormsApp1
                                        where s.Name.StartsWith(text) || s.SSN.StartsWith(text)
                                        select s).ToList();
             grdUser.DataSource = usersfromtextsearch;
+            grdUser.Refresh();
         }
 
         private void btnAddUser_Click(object sender, EventArgs e)
         {
             adduserForm news = new adduserForm();
             news.ButtonClicked += new EventHandler(AddBookForm_ButtonClicked);
-            news.Show(this);
-            btnAddUser.Enabled = false;
+            news.ShowDialog(this);
         }
 
         private void AddBookForm_ButtonClicked(object? sender, EventArgs e)
         {
             GetUsers();
-            btnAddUser.Enabled = true;
         }
 
         private void GrdUser_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            var senderGrid = (DataGridView)sender;
+            int index = senderGrid.Rows[e.RowIndex].Index;
+            userID = (int)senderGrid.Rows[index].Cells[0].Value;
             UserDetailForm UDF = new UserDetailForm();
-            UDF.Show(this);
+            UDF.ShowDialog(this);
         }
     }
 }

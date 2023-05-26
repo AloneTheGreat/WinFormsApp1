@@ -28,167 +28,207 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             label2 = new Label();
-            button1 = new Button();
+            btnSave = new Button();
             label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            comboBox2 = new ComboBox();
-            comboBox1 = new ComboBox();
-            textBox3 = new TextBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            lblAuthor = new Label();
+            lblTitle = new Label();
+            txtAuthor = new TextBox();
+            txtTitle = new TextBox();
+            txtDescription = new RichTextBox();
+            lblDescription = new Label();
+            lblImage = new Label();
+            lblError = new Label();
+            nudTotalCopies = new NumericUpDown();
+            lblCategory = new Label();
+            cbCategory = new ComboBox();
+            btnBrowse = new Button();
+            ofd = new OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)nudTotalCopies).BeginInit();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(34, 28);
-            label1.Name = "label1";
-            label1.Size = new Size(60, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Edit Book ";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(59, 43);
+            label2.Location = new Point(59, 10);
             label2.Name = "label2";
             label2.Size = new Size(0, 15);
             label2.TabIndex = 23;
             // 
-            // button1
+            // btnSave
             // 
-            button1.Location = new Point(371, 386);
-            button1.Name = "button1";
-            button1.Size = new Size(126, 55);
-            button1.TabIndex = 34;
-            button1.Text = "SaveChanges";
-            button1.UseVisualStyleBackColor = true;
+            btnSave.BackColor = Color.Green;
+            btnSave.FlatAppearance.BorderSize = 0;
+            btnSave.FlatStyle = FlatStyle.Flat;
+            btnSave.ForeColor = Color.White;
+            btnSave.Location = new Point(275, 371);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(126, 55);
+            btnSave.TabIndex = 34;
+            btnSave.Text = "SaveChanges";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += button1_Click;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(75, 358);
+            label5.Location = new Point(67, 230);
             label5.Name = "label5";
-            label5.Size = new Size(52, 15);
+            label5.Size = new Size(75, 15);
             label5.TabIndex = 33;
-            label5.Text = "NCopies";
+            label5.Text = "Total copies :";
             // 
-            // label4
+            // lblAuthor
             // 
-            label4.AutoSize = true;
-            label4.Location = new Point(75, 291);
-            label4.Name = "label4";
-            label4.Size = new Size(55, 15);
-            label4.TabIndex = 32;
-            label4.Text = "Category";
+            lblAuthor.AutoSize = true;
+            lblAuthor.Location = new Point(67, 69);
+            lblAuthor.Name = "lblAuthor";
+            lblAuthor.Size = new Size(80, 15);
+            lblAuthor.TabIndex = 30;
+            lblAuthor.Text = "Book Author :";
             // 
-            // label3
+            // lblTitle
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(75, 226);
-            label3.Name = "label3";
-            label3.Size = new Size(32, 15);
-            label3.TabIndex = 31;
-            label3.Text = "ISBN";
+            lblTitle.AutoSize = true;
+            lblTitle.Location = new Point(67, 23);
+            lblTitle.Name = "lblTitle";
+            lblTitle.Size = new Size(65, 15);
+            lblTitle.TabIndex = 29;
+            lblTitle.Text = "Book Title :";
             // 
-            // label6
+            // txtAuthor
             // 
-            label6.AutoSize = true;
-            label6.Location = new Point(54, 148);
-            label6.Name = "label6";
-            label6.Size = new Size(86, 15);
-            label6.TabIndex = 30;
-            label6.Text = "Book Publisher";
+            txtAuthor.Location = new Point(191, 69);
+            txtAuthor.Name = "txtAuthor";
+            txtAuthor.Size = new Size(452, 23);
+            txtAuthor.TabIndex = 25;
             // 
-            // label7
+            // txtTitle
             // 
-            label7.AutoSize = true;
-            label7.Location = new Point(59, 81);
-            label7.Name = "label7";
-            label7.Size = new Size(72, 15);
-            label7.TabIndex = 29;
-            label7.Text = "Book Name ";
+            txtTitle.Location = new Point(191, 23);
+            txtTitle.Name = "txtTitle";
+            txtTitle.Size = new Size(452, 23);
+            txtTitle.TabIndex = 24;
             // 
-            // comboBox2
+            // txtDescription
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(191, 350);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 28;
+            txtDescription.Location = new Point(191, 115);
+            txtDescription.Name = "txtDescription";
+            txtDescription.Size = new Size(452, 96);
+            txtDescription.TabIndex = 35;
+            txtDescription.Text = "";
             // 
-            // comboBox1
+            // lblDescription
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(191, 291);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(217, 23);
-            comboBox1.TabIndex = 27;
+            lblDescription.AutoSize = true;
+            lblDescription.Location = new Point(67, 115);
+            lblDescription.Name = "lblDescription";
+            lblDescription.Size = new Size(102, 15);
+            lblDescription.TabIndex = 36;
+            lblDescription.Text = "Book description :";
             // 
-            // textBox3
+            // lblImage
             // 
-            textBox3.Location = new Point(191, 218);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(452, 23);
-            textBox3.TabIndex = 26;
+            lblImage.AutoSize = true;
+            lblImage.Location = new Point(67, 327);
+            lblImage.Name = "lblImage";
+            lblImage.Size = new Size(46, 15);
+            lblImage.TabIndex = 37;
+            lblImage.Text = "Image :";
             // 
-            // textBox2
+            // lblError
             // 
-            textBox2.Location = new Point(191, 145);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(452, 23);
-            textBox2.TabIndex = 25;
+            lblError.AutoSize = true;
+            lblError.Font = new Font("Segoe UI", 8F, FontStyle.Underline, GraphicsUnit.Point);
+            lblError.ForeColor = Color.Red;
+            lblError.Location = new Point(275, 429);
+            lblError.Name = "lblError";
+            lblError.Size = new Size(32, 13);
+            lblError.TabIndex = 39;
+            lblError.Text = "Error";
+            lblError.Visible = false;
             // 
-            // textBox1
+            // nudTotalCopies
             // 
-            textBox1.Location = new Point(191, 78);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(452, 23);
-            textBox1.TabIndex = 24;
+            nudTotalCopies.Location = new Point(191, 230);
+            nudTotalCopies.Name = "nudTotalCopies";
+            nudTotalCopies.Size = new Size(120, 23);
+            nudTotalCopies.TabIndex = 40;
+            // 
+            // lblCategory
+            // 
+            lblCategory.AutoSize = true;
+            lblCategory.Location = new Point(67, 273);
+            lblCategory.Name = "lblCategory";
+            lblCategory.Size = new Size(61, 15);
+            lblCategory.TabIndex = 41;
+            lblCategory.Text = "Category :";
+            // 
+            // cbCategory
+            // 
+            cbCategory.FormattingEnabled = true;
+            cbCategory.Location = new Point(191, 273);
+            cbCategory.Name = "cbCategory";
+            cbCategory.Size = new Size(121, 23);
+            cbCategory.TabIndex = 42;
+            // 
+            // btnBrowse
+            // 
+            btnBrowse.Location = new Point(191, 327);
+            btnBrowse.Name = "btnBrowse";
+            btnBrowse.Size = new Size(75, 23);
+            btnBrowse.TabIndex = 43;
+            btnBrowse.Text = "Browse";
+            btnBrowse.UseVisualStyleBackColor = true;
+            btnBrowse.Click += btnBrowse_Click;
             // 
             // EditBookForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(button1);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(685, 450);
+            Controls.Add(btnBrowse);
+            Controls.Add(cbCategory);
+            Controls.Add(lblCategory);
+            Controls.Add(nudTotalCopies);
+            Controls.Add(lblError);
+            Controls.Add(lblImage);
+            Controls.Add(lblDescription);
+            Controls.Add(txtDescription);
+            Controls.Add(btnSave);
             Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label6);
-            Controls.Add(label7);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(lblAuthor);
+            Controls.Add(lblTitle);
+            Controls.Add(txtAuthor);
+            Controls.Add(txtTitle);
             Controls.Add(label2);
-            Controls.Add(label1);
             Name = "EditBookForm";
             Text = "Edit Book";
+            ((System.ComponentModel.ISupportInitialize)nudTotalCopies).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
-        private Button button1;
+        private Button btnSave;
         private Label label5;
         private Label label4;
-        private Label label3;
-        private Label label6;
-        private Label label7;
+        private Label lblAuthor;
+        private Label lblTitle;
         private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtAuthor;
+        private TextBox txtTitle;
+        private RichTextBox txtDescription;
+        private Label lblDescription;
+        private Label lblImage;
+        private TextBox textBox4;
+        private Label lblError;
+        private NumericUpDown nudTotalCopies;
+        private Label lblCategory;
+        private ComboBox cbCategory;
+        private Button btnBrowse;
+        private OpenFileDialog ofd;
     }
 }

@@ -32,25 +32,40 @@
             button2 = new Button();
             button3 = new Button();
             label1 = new Label();
-            label2 = new Label();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            cover = new PictureBox();
+            label3 = new Label();
+            label5 = new Label();
+            label9 = new Label();
+            label11 = new Label();
+            label12 = new Label();
+            label15 = new Label();
+            BDTitle = new TextBox();
+            BDAuthor = new TextBox();
+            BDDescription = new TextBox();
+            BDGategory = new TextBox();
+            BDISBAN = new TextBox();
+            BDtotalcopies = new TextBox();
+            BDAvailable = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)cover).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(41, 355);
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(24, 287);
             button1.Name = "button1";
-            button1.Size = new Size(148, 65);
+            button1.Size = new Size(136, 60);
             button1.TabIndex = 1;
             button1.Text = "borrow book ";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
-            button2.Location = new Point(319, 355);
+            button2.FlatStyle = FlatStyle.Flat;
+            button2.Location = new Point(179, 287);
             button2.Name = "button2";
-            button2.Size = new Size(161, 65);
+            button2.Size = new Size(149, 60);
             button2.TabIndex = 2;
             button2.Text = "edit book ";
             button2.UseVisualStyleBackColor = true;
@@ -58,53 +73,169 @@
             // 
             // button3
             // 
-            button3.Location = new Point(591, 355);
+            button3.FlatStyle = FlatStyle.Flat;
+            button3.Location = new Point(348, 287);
             button3.Name = "button3";
-            button3.Size = new Size(150, 65);
+            button3.Size = new Size(138, 60);
             button3.TabIndex = 3;
             button3.Text = "remove book ";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(41, 21);
+            label1.Location = new Point(204, 47);
             label1.Name = "label1";
-            label1.Size = new Size(35, 15);
+            label1.Size = new Size(50, 15);
             label1.TabIndex = 4;
-            label1.Text = "Title :";
+            label1.Text = "Author :";
             // 
-            // label2
+            // cover
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(90, 22);
-            label2.Name = "label2";
-            label2.Size = new Size(38, 15);
-            label2.TabIndex = 5;
-            label2.Text = "label2";
+            cover.Location = new Point(12, 12);
+            cover.Name = "cover";
+            cover.Size = new Size(172, 234);
+            cover.TabIndex = 6;
+            cover.TabStop = false;
             // 
-            // pictureBox1
+            // label3
             // 
-            pictureBox1.Location = new Point(619, 21);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(158, 199);
-            pictureBox1.TabIndex = 6;
-            pictureBox1.TabStop = false;
+            label3.AutoSize = true;
+            label3.Location = new Point(204, 12);
+            label3.Name = "label3";
+            label3.Size = new Size(35, 15);
+            label3.TabIndex = 4;
+            label3.Text = "Title :";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(204, 86);
+            label5.Name = "label5";
+            label5.Size = new Size(73, 15);
+            label5.TabIndex = 4;
+            label5.Text = "Description :";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new Point(204, 125);
+            label9.Name = "label9";
+            label9.Size = new Size(61, 15);
+            label9.TabIndex = 4;
+            label9.Text = "Gategory :";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(204, 231);
+            label11.Name = "label11";
+            label11.Size = new Size(100, 15);
+            label11.TabIndex = 4;
+            label11.Text = "Available Copies :";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(204, 196);
+            label12.Name = "label12";
+            label12.Size = new Size(91, 15);
+            label12.TabIndex = 4;
+            label12.Text = "Total of Copies :";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(204, 161);
+            label15.Name = "label15";
+            label15.Size = new Size(38, 15);
+            label15.TabIndex = 4;
+            label15.Text = "ISBN :";
+            // 
+            // BDTitle
+            // 
+            BDTitle.Location = new Point(319, 12);
+            BDTitle.Name = "BDTitle";
+            BDTitle.ReadOnly = true;
+            BDTitle.Size = new Size(176, 23);
+            BDTitle.TabIndex = 7;
+            // 
+            // BDAuthor
+            // 
+            BDAuthor.Location = new Point(319, 47);
+            BDAuthor.Name = "BDAuthor";
+            BDAuthor.ReadOnly = true;
+            BDAuthor.Size = new Size(176, 23);
+            BDAuthor.TabIndex = 7;
+            // 
+            // BDDescription
+            // 
+            BDDescription.Location = new Point(319, 86);
+            BDDescription.Name = "BDDescription";
+            BDDescription.ReadOnly = true;
+            BDDescription.Size = new Size(176, 23);
+            BDDescription.TabIndex = 7;
+            // 
+            // BDGategory
+            // 
+            BDGategory.Location = new Point(319, 125);
+            BDGategory.Name = "BDGategory";
+            BDGategory.ReadOnly = true;
+            BDGategory.Size = new Size(176, 23);
+            BDGategory.TabIndex = 7;
+            // 
+            // BDISBAN
+            // 
+            BDISBAN.Location = new Point(319, 161);
+            BDISBAN.Name = "BDISBAN";
+            BDISBAN.ReadOnly = true;
+            BDISBAN.Size = new Size(176, 23);
+            BDISBAN.TabIndex = 7;
+            // 
+            // BDtotalcopies
+            // 
+            BDtotalcopies.Location = new Point(319, 196);
+            BDtotalcopies.Name = "BDtotalcopies";
+            BDtotalcopies.ReadOnly = true;
+            BDtotalcopies.Size = new Size(176, 23);
+            BDtotalcopies.TabIndex = 7;
+            // 
+            // BDAvailable
+            // 
+            BDAvailable.Location = new Point(319, 231);
+            BDAvailable.Name = "BDAvailable";
+            BDAvailable.ReadOnly = true;
+            BDAvailable.Size = new Size(176, 23);
+            BDAvailable.TabIndex = 7;
             // 
             // BookDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox1);
-            Controls.Add(label2);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(542, 386);
+            Controls.Add(BDAvailable);
+            Controls.Add(BDtotalcopies);
+            Controls.Add(BDISBAN);
+            Controls.Add(BDGategory);
+            Controls.Add(BDDescription);
+            Controls.Add(BDAuthor);
+            Controls.Add(BDTitle);
+            Controls.Add(cover);
+            Controls.Add(label15);
+            Controls.Add(label12);
+            Controls.Add(label3);
+            Controls.Add(label11);
+            Controls.Add(label5);
+            Controls.Add(label9);
             Controls.Add(label1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Name = "BookDetailForm";
-            Text = "Form6";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Text = "BookDetails";
+            ((System.ComponentModel.ISupportInitialize)cover).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -114,7 +245,19 @@
         private Button button2;
         private Button button3;
         private Label label1;
-        private Label label2;
-        private PictureBox pictureBox1;
+        private PictureBox cover;
+        private Label label3;
+        private Label label5;
+        private Label label9;
+        private Label label11;
+        private Label label12;
+        private Label label15;
+        private TextBox BDTitle;
+        private TextBox BDAuthor;
+        private TextBox BDDescription;
+        private TextBox BDGategory;
+        private TextBox BDISBAN;
+        private TextBox BDtotalcopies;
+        private TextBox BDAvailable;
     }
 }

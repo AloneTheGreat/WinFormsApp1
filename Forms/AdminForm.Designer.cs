@@ -42,13 +42,13 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.SeaGreen;
+            button1.BackColor = Color.Green;
             button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.White;
-            button1.FlatAppearance.MouseOverBackColor = Color.FromArgb(192, 64, 0);
+            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
+            button1.ForeColor = Color.Transparent;
             button1.Location = new Point(61, 368);
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
@@ -127,6 +127,7 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.ImageLocation = "F:\\computer science\\iti\\C# Project\\WinFormsApp1\\Resources\\login.png";
             pictureBox1.Location = new Point(125, 21);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
@@ -152,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(391, 524);
             Controls.Add(lblErrorMessage);
             Controls.Add(pictureBox1);
@@ -163,7 +164,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
-            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(4, 3, 4, 3);
             Name = "AdminForm";
             StartPosition = FormStartPosition.CenterScreen;

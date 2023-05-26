@@ -32,15 +32,26 @@
             button2 = new Button();
             button1 = new Button();
             panel2 = new Panel();
-            userccount = new Label();
-            usercounttextbox = new TextBox();
+            resulttextbox = new TextBox();
+            label7 = new Label();
+            textBox5 = new TextBox();
+            label6 = new Label();
+            label5 = new Label();
+            label4 = new Label();
+            label3 = new Label();
+            textbox4 = new TextBox();
+            textbox3 = new TextBox();
+            textbox2 = new TextBox();
+            label2 = new Label();
+            label1 = new Label();
+            textbox1 = new TextBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
+            panel1.BackColor = Color.Black;
             panel1.Controls.Add(button2);
             panel1.Controls.Add(button1);
             panel1.Dock = DockStyle.Top;
@@ -51,7 +62,7 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.LightGray;
+            button2.BackColor = Color.White;
             button2.FlatStyle = FlatStyle.Flat;
             button2.Location = new Point(175, 12);
             button2.Margin = new Padding(4, 3, 4, 3);
@@ -64,7 +75,7 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.LightGray;
+            button1.BackColor = Color.White;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Location = new Point(13, 12);
             button1.Margin = new Padding(4, 3, 4, 3);
@@ -77,31 +88,137 @@
             // 
             // panel2
             // 
-            panel2.BackColor = Color.DimGray;
-            panel2.Controls.Add(userccount);
-            panel2.Controls.Add(usercounttextbox);
+            panel2.BackColor = Color.WhiteSmoke;
+            panel2.Controls.Add(resulttextbox);
+            panel2.Controls.Add(label7);
+            panel2.Controls.Add(textBox5);
+            panel2.Controls.Add(label6);
+            panel2.Controls.Add(label5);
+            panel2.Controls.Add(label4);
+            panel2.Controls.Add(label3);
+            panel2.Controls.Add(textbox4);
+            panel2.Controls.Add(textbox3);
+            panel2.Controls.Add(textbox2);
+            panel2.Controls.Add(label2);
+            panel2.Controls.Add(label1);
+            panel2.Controls.Add(textbox1);
             panel2.Dock = DockStyle.Fill;
             panel2.Location = new Point(0, 52);
             panel2.Name = "panel2";
             panel2.Size = new Size(800, 398);
             panel2.TabIndex = 2;
             // 
-            // userccount
+            // resulttextbox
             // 
-            userccount.AutoSize = true;
-            userccount.Location = new Point(76, 69);
-            userccount.Name = "userccount";
-            userccount.Size = new Size(38, 15);
-            userccount.TabIndex = 1;
-            userccount.Text = "label1";
-            userccount.Visible = false;
+            resulttextbox.Location = new Point(313, 332);
+            resulttextbox.Name = "resulttextbox";
+            resulttextbox.ReadOnly = true;
+            resulttextbox.Size = new Size(100, 23);
+            resulttextbox.TabIndex = 13;
             // 
-            // usercounttextbox
+            // label7
             // 
-            usercounttextbox.Location = new Point(229, 66);
-            usercounttextbox.Name = "usercounttextbox";
-            usercounttextbox.Size = new Size(100, 23);
-            usercounttextbox.TabIndex = 0;
+            label7.AutoSize = true;
+            label7.Location = new Point(484, 331);
+            label7.Name = "label7";
+            label7.Size = new Size(38, 15);
+            label7.TabIndex = 12;
+            label7.Text = "label7";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(313, 273);
+            textBox5.Name = "textBox5";
+            textBox5.ReadOnly = true;
+            textBox5.Size = new Size(100, 23);
+            textBox5.TabIndex = 10;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(76, 332);
+            label6.Name = "label6";
+            label6.Size = new Size(38, 15);
+            label6.TabIndex = 9;
+            label6.Text = "label6";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(76, 273);
+            label5.Name = "label5";
+            label5.Size = new Size(38, 15);
+            label5.TabIndex = 8;
+            label5.Text = "label5";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(76, 217);
+            label4.Name = "label4";
+            label4.Size = new Size(38, 15);
+            label4.TabIndex = 7;
+            label4.Text = "label4";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(76, 156);
+            label3.Name = "label3";
+            label3.Size = new Size(38, 15);
+            label3.TabIndex = 6;
+            label3.Text = "label3";
+            // 
+            // textbox4
+            // 
+            textbox4.Location = new Point(313, 209);
+            textbox4.Name = "textbox4";
+            textbox4.ReadOnly = true;
+            textbox4.Size = new Size(100, 23);
+            textbox4.TabIndex = 5;
+            // 
+            // textbox3
+            // 
+            textbox3.Location = new Point(313, 148);
+            textbox3.Name = "textbox3";
+            textbox3.ReadOnly = true;
+            textbox3.Size = new Size(100, 23);
+            textbox3.TabIndex = 4;
+            // 
+            // textbox2
+            // 
+            textbox2.Location = new Point(313, 88);
+            textbox2.Name = "textbox2";
+            textbox2.ReadOnly = true;
+            textbox2.Size = new Size(100, 23);
+            textbox2.TabIndex = 3;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(76, 88);
+            label2.Name = "label2";
+            label2.Size = new Size(38, 15);
+            label2.TabIndex = 2;
+            label2.Text = "label2";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(76, 37);
+            label1.Name = "label1";
+            label1.Size = new Size(38, 15);
+            label1.TabIndex = 1;
+            label1.Text = "label1";
+            label1.Visible = false;
+            // 
+            // textbox1
+            // 
+            textbox1.Location = new Point(313, 37);
+            textbox1.Name = "textbox1";
+            textbox1.ReadOnly = true;
+            textbox1.Size = new Size(100, 23);
+            textbox1.TabIndex = 0;
             // 
             // StatisticsForm
             // 
@@ -127,8 +244,19 @@
         private Button button2;
         private Button button1;
         private Panel panel2;
-        private Label userccount;
-        private TextBox usercounttextbox;
+        private Label label1;
+        private TextBox textbox1;
+        private Label label4;
+        private Label label3;
+        private TextBox textbox4;
+        private TextBox textbox3;
+        private TextBox textbox2;
+        private Label label2;
+        private TextBox textBox5;
+        private Label label6;
+        private Label label5;
+        private Label label7;
+        private TextBox resulttextbox;
     }
 }
 

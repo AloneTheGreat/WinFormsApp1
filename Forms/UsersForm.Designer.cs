@@ -38,7 +38,7 @@
             // 
             // grdUser
             // 
-            grdUser.BackgroundColor = Color.DimGray;
+            grdUser.BackgroundColor = Color.WhiteSmoke;
             grdUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdUser.Dock = DockStyle.Fill;
             grdUser.Location = new Point(0, 54);
@@ -50,7 +50,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
+            panel1.BackColor = Color.Black;
             panel1.Controls.Add(btnAddUser);
             panel1.Controls.Add(txtSearch);
             panel1.Dock = DockStyle.Top;
@@ -63,6 +63,7 @@
             // 
             btnAddUser.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnAddUser.BackColor = Color.RoyalBlue;
+            btnAddUser.FlatAppearance.BorderSize = 0;
             btnAddUser.FlatStyle = FlatStyle.Flat;
             btnAddUser.ForeColor = Color.White;
             btnAddUser.Location = new Point(707, 12);
@@ -75,7 +76,7 @@
             // 
             // txtSearch
             // 
-            txtSearch.BackColor = Color.LightGray;
+            txtSearch.BackColor = Color.White;
             txtSearch.Location = new Point(12, 17);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Search";

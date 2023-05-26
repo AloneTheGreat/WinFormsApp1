@@ -30,43 +30,121 @@
         {
             grdBorrowed = new DataGridView();
             btnReturn = new DataGridViewButtonColumn();
-            label1 = new Label();
+            lblName = new Label();
+            lblEmail = new Label();
+            lblSSN = new Label();
+            lblPhone = new Label();
+            txtName = new TextBox();
+            txtEmail = new TextBox();
+            txtSSN = new TextBox();
+            txtPhone = new TextBox();
             ((System.ComponentModel.ISupportInitialize)grdBorrowed).BeginInit();
             SuspendLayout();
             // 
             // grdBorrowed
             // 
+            grdBorrowed.BackgroundColor = Color.WhiteSmoke;
             grdBorrowed.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdBorrowed.Columns.AddRange(new DataGridViewColumn[] { btnReturn });
-            grdBorrowed.Location = new Point(12, 223);
+            grdBorrowed.Dock = DockStyle.Bottom;
+            grdBorrowed.Location = new Point(0, 106);
             grdBorrowed.Name = "grdBorrowed";
             grdBorrowed.RowTemplate.Height = 25;
-            grdBorrowed.Size = new Size(776, 215);
+            grdBorrowed.Size = new Size(592, 215);
             grdBorrowed.TabIndex = 0;
-            grdBorrowed.CellContentClick += grdBorrowed_CellContentClick;
+            grdBorrowed.CellContentClick += dataGridView1_CellContentClick;
             // 
             // btnReturn
             // 
+            btnReturn.FlatStyle = FlatStyle.Flat;
             btnReturn.HeaderText = "";
             btnReturn.Name = "btnReturn";
             btnReturn.Text = "Return";
             btnReturn.UseColumnTextForButtonValue = true;
+            btnReturn.Width = 70;
             // 
-            // label1
+            // lblName
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(358, 77);
-            label1.Name = "label1";
-            label1.Size = new Size(62, 15);
-            label1.TabIndex = 1;
-            label1.Text = "User Detils";
+            lblName.AutoSize = true;
+            lblName.Location = new Point(27, 21);
+            lblName.Name = "lblName";
+            lblName.Size = new Size(45, 15);
+            lblName.TabIndex = 1;
+            lblName.Text = "Name :";
+            // 
+            // lblEmail
+            // 
+            lblEmail.AutoSize = true;
+            lblEmail.Location = new Point(27, 57);
+            lblEmail.Name = "lblEmail";
+            lblEmail.Size = new Size(42, 15);
+            lblEmail.TabIndex = 2;
+            lblEmail.Text = "Email :";
+            // 
+            // lblSSN
+            // 
+            lblSSN.AutoSize = true;
+            lblSSN.Location = new Point(323, 21);
+            lblSSN.Name = "lblSSN";
+            lblSSN.Size = new Size(34, 15);
+            lblSSN.TabIndex = 3;
+            lblSSN.Text = "SSN :";
+            // 
+            // lblPhone
+            // 
+            lblPhone.AutoSize = true;
+            lblPhone.Location = new Point(323, 57);
+            lblPhone.Name = "lblPhone";
+            lblPhone.Size = new Size(47, 15);
+            lblPhone.TabIndex = 4;
+            lblPhone.Text = "Phone :";
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(91, 21);
+            txtName.Name = "txtName";
+            txtName.ReadOnly = true;
+            txtName.Size = new Size(174, 23);
+            txtName.TabIndex = 5;
+            // 
+            // txtEmail
+            // 
+            txtEmail.Location = new Point(91, 57);
+            txtEmail.Name = "txtEmail";
+            txtEmail.ReadOnly = true;
+            txtEmail.Size = new Size(174, 23);
+            txtEmail.TabIndex = 6;
+            // 
+            // txtSSN
+            // 
+            txtSSN.Location = new Point(387, 21);
+            txtSSN.Name = "txtSSN";
+            txtSSN.ReadOnly = true;
+            txtSSN.Size = new Size(174, 23);
+            txtSSN.TabIndex = 7;
+            // 
+            // txtPhone
+            // 
+            txtPhone.Location = new Point(387, 57);
+            txtPhone.Name = "txtPhone";
+            txtPhone.ReadOnly = true;
+            txtPhone.Size = new Size(174, 23);
+            txtPhone.TabIndex = 8;
             // 
             // UserDetailForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(label1);
+            BackColor = Color.WhiteSmoke;
+            ClientSize = new Size(592, 321);
+            Controls.Add(txtPhone);
+            Controls.Add(txtSSN);
+            Controls.Add(txtEmail);
+            Controls.Add(txtName);
+            Controls.Add(lblPhone);
+            Controls.Add(lblSSN);
+            Controls.Add(lblEmail);
+            Controls.Add(lblName);
             Controls.Add(grdBorrowed);
             Name = "UserDetailForm";
             Text = "UserDetail";
@@ -78,8 +156,14 @@
         private DataGridView grdBorrowed;
 
         #endregion
-
+        private Label lblName;
+        private Label lblEmail;
+        private Label lblSSN;
+        private Label lblPhone;
+        private TextBox txtName;
+        private TextBox txtEmail;
+        private TextBox txtSSN;
+        private TextBox txtPhone;
         private DataGridViewButtonColumn btnReturn;
-        private Label label1;
     }
 }

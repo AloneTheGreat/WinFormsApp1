@@ -29,7 +29,7 @@ namespace WinFormsApp1
         {
             UsersForm usersForm = new UsersForm() { TopLevel = false };
             panel1.Controls.Clear();
-            panel1.Controls.Add(usersForm); 
+            panel1.Controls.Add(usersForm);
             usersForm.Show();
         }
 

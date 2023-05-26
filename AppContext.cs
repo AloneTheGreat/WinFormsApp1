@@ -24,6 +24,13 @@ namespace WinFormsApp1
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<User>().HasIndex(u => u.SSN).IsUnique();
+            modelBuilder.Entity<User>().HasIndex(u => u.Email).IsUnique();
+            modelBuilder.Entity<User>().HasIndex(u => u.Phone).IsUnique();
+            modelBuilder.Entity<Book>().HasIndex(u => u.ISBN).IsUnique();
+            modelBuilder.Entity<Book>().HasIndex(u => u.Title).IsUnique();
+            modelBuilder.Entity<Category>().HasIndex(u => u.Name).IsUnique();
         }
     }
 }

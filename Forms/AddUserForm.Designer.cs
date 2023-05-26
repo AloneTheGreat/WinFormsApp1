@@ -85,13 +85,13 @@
             // 
             // CreateNewUser
             // 
-            CreateNewUser.BackColor = Color.FromArgb(0, 0, 64);
+            CreateNewUser.BackColor = Color.Green;
             CreateNewUser.FlatAppearance.BorderSize = 0;
-            CreateNewUser.FlatAppearance.MouseDownBackColor = Color.White;
-            CreateNewUser.FlatAppearance.MouseOverBackColor = Color.FromArgb(0, 0, 64);
+            CreateNewUser.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            CreateNewUser.FlatAppearance.MouseOverBackColor = Color.Transparent;
             CreateNewUser.FlatStyle = FlatStyle.Flat;
             CreateNewUser.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            CreateNewUser.ForeColor = Color.FromArgb(255, 128, 0);
+            CreateNewUser.ForeColor = Color.Transparent;
             CreateNewUser.Location = new Point(86, 399);
             CreateNewUser.Margin = new Padding(4, 3, 4, 3);
             CreateNewUser.Name = "CreateNewUser";
@@ -167,6 +167,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(430, 519);
             Controls.Add(lblAddError);
             Controls.Add(label1);

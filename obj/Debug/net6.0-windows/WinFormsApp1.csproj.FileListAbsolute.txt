@@ -35,7 +35,7 @@ F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinForm
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.BorrowingBookForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.EditBookForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.StatisticsForm.resources
-F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Migrations.intial.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UsersForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.adduserForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Properties.Resources.resources
+F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Migrations.intial.resources

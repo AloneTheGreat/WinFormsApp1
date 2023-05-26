@@ -42,7 +42,7 @@
             // 
             // grdBooks
             // 
-            grdBooks.BackgroundColor = Color.DimGray;
+            grdBooks.BackgroundColor = Color.WhiteSmoke;
             grdBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdBooks.Dock = DockStyle.Fill;
             grdBooks.Location = new Point(0, 57);
@@ -54,7 +54,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.DarkSlateGray;
+            panel1.BackColor = Color.Black;
             panel1.Controls.Add(btnAddBook);
             panel1.Controls.Add(categories);
             panel1.Controls.Add(txtSearch);
@@ -68,7 +68,9 @@
             // 
             btnAddBook.Anchor = AnchorStyles.Top | AnchorStyles.Right;
             btnAddBook.BackColor = Color.RoyalBlue;
+            btnAddBook.FlatAppearance.BorderSize = 0;
             btnAddBook.FlatStyle = FlatStyle.Flat;
+            btnAddBook.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             btnAddBook.ForeColor = Color.White;
             btnAddBook.Location = new Point(699, 12);
             btnAddBook.Name = "btnAddBook";
@@ -80,7 +82,7 @@
             // 
             // categories
             // 
-            categories.BackColor = Color.LightGray;
+            categories.BackColor = Color.White;
             categories.FormattingEnabled = true;
             categories.Location = new Point(28, 18);
             categories.Name = "categories";
@@ -91,7 +93,7 @@
             // 
             // txtSearch
             // 
-            txtSearch.BackColor = Color.LightGray;
+            txtSearch.BackColor = Color.White;
             txtSearch.Location = new Point(236, 18);
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Search";

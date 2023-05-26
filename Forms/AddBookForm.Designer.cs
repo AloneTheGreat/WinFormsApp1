@@ -124,12 +124,16 @@
             // 
             // btnSaveAdd
             // 
+            btnSaveAdd.BackColor = Color.Green;
+            btnSaveAdd.FlatAppearance.BorderSize = 0;
+            btnSaveAdd.FlatStyle = FlatStyle.Flat;
+            btnSaveAdd.ForeColor = Color.Transparent;
             btnSaveAdd.Location = new Point(327, 459);
             btnSaveAdd.Name = "btnSaveAdd";
             btnSaveAdd.Size = new Size(145, 46);
             btnSaveAdd.TabIndex = 10;
             btnSaveAdd.Text = "Add Book";
-            btnSaveAdd.UseVisualStyleBackColor = true;
+            btnSaveAdd.UseVisualStyleBackColor = false;
             btnSaveAdd.Click += BtnSaveAdd_Click;
             // 
             // BKDes
@@ -167,6 +171,7 @@
             // 
             // btnBrowse
             // 
+            btnBrowse.FlatStyle = FlatStyle.Flat;
             btnBrowse.Location = new Point(181, 407);
             btnBrowse.Name = "btnBrowse";
             btnBrowse.Size = new Size(82, 37);
@@ -195,6 +200,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             ClientSize = new Size(800, 550);
             Controls.Add(lblAddError);
             Controls.Add(btnBrowse);
@@ -215,7 +221,6 @@
             Name = "AddBookForm";
             StartPosition = FormStartPosition.CenterParent;
             Text = "AddBook";
-            FormClosed += BooksForm_FormClosed;
             ((System.ComponentModel.ISupportInitialize)BKNOS).EndInit();
             ResumeLayout(false);
             PerformLayout();

@@ -1,3 +1,4 @@
+using System.Data.Entity;
 using WinFormsApp1.Models;
 
 namespace WinFormsApp1
@@ -14,6 +15,8 @@ namespace WinFormsApp1
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new AdminForm());
+
+            Database.SetInitializer<AppContext>(new DropCreateDatabaseAlways<AppContext>());
         }
     }
 }

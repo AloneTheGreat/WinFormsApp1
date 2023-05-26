@@ -83,11 +83,6 @@ namespace WinFormsApp1
             }
         }
 
-        private void BooksForm_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            if (ButtonClicked != null)
-                ButtonClicked(this, e);
-        }
 
         public void BKGetCategories()
         {

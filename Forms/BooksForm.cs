@@ -11,6 +11,7 @@ namespace WinFormsApp1
 {
     public partial class BooksForm : Form
     {
+        internal static int bookID;
         public BooksForm()
         {
             InitializeComponent();
@@ -36,6 +37,7 @@ namespace WinFormsApp1
                                  where b.Title.StartsWith(search)
                                  select new
                                  {
+                                     Id = b.ID,
                                      Author = b.Author,
                                      Title = b.Title,
                                      Description = b.Description,
@@ -55,6 +57,7 @@ namespace WinFormsApp1
                                  where b.Title.StartsWith(search)
                                  select new
                                  {
+                                     Id = b.ID,
                                      Author = b.Author,
                                      Title = b.Title,
                                      Description = b.Description,
@@ -63,7 +66,8 @@ namespace WinFormsApp1
                                      TotalCopies = b.TotalCopies,
                                      AvailableCopies = b.AvailableCopies,
                                      ISBN = b.ISBN,
-                                 }).ToList(); grdBooks.DataSource = books;
+                                 }).ToList();
+                    grdBooks.DataSource = books;
                     grdBooks.Refresh();
                 }
             }
@@ -87,23 +91,23 @@ namespace WinFormsApp1
 
         private void GrdBooks_RowHeaderMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+            int bookindex = grdBooks.Rows[e.RowIndex].Index;
+            bookID = (int)grdBooks.Rows[bookindex].Cells[0].Value;
             BookDetailForm f = new BookDetailForm();
-            f.Show();
+            f.ShowDialog(this);
         }
 
         private void BtnAddBook_Click(object sender, EventArgs e)
         {
             AddBookForm fn = new AddBookForm();
             fn.ButtonClicked += new EventHandler(AddBookForm_ButtonClicked);
-            fn.Show(this);
-            btnAddBook.Enabled = false;
+            fn.ShowDialog(this);
         }
 
         private void AddBookForm_ButtonClicked(object? sender, EventArgs e)
         {
             GetCategories();
             GetBooks(0);
-            btnAddBook.Enabled = true;
         }
 
         private void categories_SelectedIndexChanged(object sender, EventArgs e)
@@ -118,5 +122,6 @@ namespace WinFormsApp1
             int index = (int)categories.SelectedValue;
             GetBooks(index, text);
         }
+
     }
 }

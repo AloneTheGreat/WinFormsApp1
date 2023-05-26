@@ -14,10 +14,14 @@ namespace WinFormsApp1.Models
         public string Name { get; set; }
 
         [DataType(DataType.EmailAddress)]
+        [MaxLength(50)]
         public string Email { get; set; }
 
+        [MaxLength(50)]
         public string SSN { get; set; }
 
+        [DataType(DataType.PhoneNumber)]
+        [MaxLength(50)]
         public string Phone { get; set; }
     }
 }
