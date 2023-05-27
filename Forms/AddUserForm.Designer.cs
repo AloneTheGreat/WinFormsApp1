@@ -87,8 +87,8 @@
             // 
             CreateNewUser.BackColor = Color.Green;
             CreateNewUser.FlatAppearance.BorderSize = 0;
-            CreateNewUser.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            CreateNewUser.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            CreateNewUser.FlatAppearance.MouseDownBackColor = Color.White;
+            CreateNewUser.FlatAppearance.MouseOverBackColor = Color.Green;
             CreateNewUser.FlatStyle = FlatStyle.Flat;
             CreateNewUser.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             CreateNewUser.ForeColor = Color.Transparent;

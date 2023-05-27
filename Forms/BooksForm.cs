@@ -94,6 +94,7 @@ namespace WinFormsApp1
             int bookindex = grdBooks.Rows[e.RowIndex].Index;
             bookID = (int)grdBooks.Rows[bookindex].Cells[0].Value;
             BookDetailForm f = new BookDetailForm();
+            f.ButtonClicked += new EventHandler(AddBookForm_ButtonClicked);
             f.ShowDialog(this);
         }
 

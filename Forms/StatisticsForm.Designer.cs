@@ -84,7 +84,7 @@
             button1.TabIndex = 2;
             button1.Text = "USER";
             button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click_1;
+            button1.Click += button1_Click;
             // 
             // panel2
             // 
@@ -115,6 +115,7 @@
             resulttextbox.ReadOnly = true;
             resulttextbox.Size = new Size(100, 23);
             resulttextbox.TabIndex = 13;
+            resulttextbox.Visible = false;
             // 
             // label7
             // 
@@ -124,6 +125,7 @@
             label7.Size = new Size(38, 15);
             label7.TabIndex = 12;
             label7.Text = "label7";
+            label7.Visible = false;
             // 
             // textBox5
             // 
@@ -132,6 +134,7 @@
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(100, 23);
             textBox5.TabIndex = 10;
+            textBox5.Visible = false;
             // 
             // label6
             // 
@@ -141,6 +144,7 @@
             label6.Size = new Size(38, 15);
             label6.TabIndex = 9;
             label6.Text = "label6";
+            label6.Visible = false;
             // 
             // label5
             // 
@@ -150,6 +154,7 @@
             label5.Size = new Size(38, 15);
             label5.TabIndex = 8;
             label5.Text = "label5";
+            label5.Visible = false;
             // 
             // label4
             // 
@@ -159,6 +164,7 @@
             label4.Size = new Size(38, 15);
             label4.TabIndex = 7;
             label4.Text = "label4";
+            label4.Visible = false;
             // 
             // label3
             // 
@@ -168,6 +174,7 @@
             label3.Size = new Size(38, 15);
             label3.TabIndex = 6;
             label3.Text = "label3";
+            label3.Visible = false;
             // 
             // textbox4
             // 
@@ -176,6 +183,7 @@
             textbox4.ReadOnly = true;
             textbox4.Size = new Size(100, 23);
             textbox4.TabIndex = 5;
+            textbox4.Visible = false;
             // 
             // textbox3
             // 
@@ -184,6 +192,7 @@
             textbox3.ReadOnly = true;
             textbox3.Size = new Size(100, 23);
             textbox3.TabIndex = 4;
+            textbox3.Visible = false;
             // 
             // textbox2
             // 
@@ -192,6 +201,7 @@
             textbox2.ReadOnly = true;
             textbox2.Size = new Size(100, 23);
             textbox2.TabIndex = 3;
+            textbox2.Visible = false;
             // 
             // label2
             // 
@@ -201,6 +211,7 @@
             label2.Size = new Size(38, 15);
             label2.TabIndex = 2;
             label2.Text = "label2";
+            label2.Visible = false;
             // 
             // label1
             // 
@@ -219,6 +230,7 @@
             textbox1.ReadOnly = true;
             textbox1.Size = new Size(100, 23);
             textbox1.TabIndex = 0;
+            textbox1.Visible = false;
             // 
             // StatisticsForm
             // 

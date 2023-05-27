@@ -96,6 +96,7 @@
             cover.Location = new Point(12, 12);
             cover.Name = "cover";
             cover.Size = new Size(172, 234);
+            cover.SizeMode = PictureBoxSizeMode.StretchImage;
             cover.TabIndex = 6;
             cover.TabStop = false;
             // 
@@ -235,6 +236,7 @@
             Controls.Add(button1);
             Name = "BookDetailForm";
             Text = "BookDetails";
+            FormClosed += BookDetailForm_FormClosed;
             ((System.ComponentModel.ISupportInitialize)cover).EndInit();
             ResumeLayout(false);
             PerformLayout();

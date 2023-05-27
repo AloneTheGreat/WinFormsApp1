@@ -16,6 +16,10 @@ namespace WinFormsApp1
         public StatisticsForm()
         {
             InitializeComponent();
+        }
+
+        private void clean_Screen()
+        {
             label1.Visible = false;
             label2.Visible = false;
             label3.Visible = false;
@@ -23,18 +27,22 @@ namespace WinFormsApp1
             label5.Visible = false;
             label6.Visible = false;
             label7.Visible = false;
-
+            textbox1.Visible = false;
+            textbox2.Visible = false;
+            textbox3.Visible = false;
+            textbox4.Visible = false;
+            textBox5.Visible = false;
+            resulttextbox.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
+            clean_Screen();
             label1.Visible = true;
             label2.Visible = true;
+
+            textbox1.Visible = true; 
+            textbox2.Visible = true;
 
 
             AppContext cn = new AppContext();
@@ -42,48 +50,30 @@ namespace WinFormsApp1
             using (cn)
             {
                 var usercount = cn.Users.Count();
-
-                label1.Text = "Number of users";
+                label1.Text = "Number of users :";
                 textbox1.Text = usercount.ToString();
+
                 var userbook = cn.UserBooks.Count();
-
-                label2.Text = "Number of books Using :";
+                label2.Text = "Number of Active Users :";
                 textbox2.Text = userbook.ToString();
-                label3.Visible = false;
-                label4.Visible = false;
-                label5.Visible = false;
-                label6.Visible = false;
-                label7.Visible = false;
-
-
-                textbox3.Visible = false;
-                textbox4.Visible = false;
-                textBox5.Visible = false;
-                resulttextbox.Visible = false;
-
-
 
                 cn.SaveChanges();
-
-
             }
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            clean_Screen();
             label1.Visible = true;
-            //  label2.Visible = true;
+            label2.Visible = true;
             label3.Visible = true;
             label4.Visible = true;
-            label5.Visible = true;
             label6.Visible = true;
 
-
+            textbox1.Visible = true;
+            textbox2.Visible = true;
             textbox3.Visible = true;
             textbox4.Visible = true;
-            textBox5.Visible = true;
             resulttextbox.Visible = true;
 
 
@@ -96,30 +86,25 @@ namespace WinFormsApp1
                 textbox1.Text = boocount.ToString();
 
 
-                //label2.Text = "Number of Titles ";
-                //var books_Titles = cn.Books.Select(e => e.Title).Count();
-                //textbox2.Text = books_Titles.ToString();
-
-
-                label3.Text = "Number of authors ";
+                label2.Text = "Number of authors ";
                 var books_authos = cn.Books.Select(e => e.Author).Count();
-                textbox3.Text = books_authos.ToString();
+                textbox2.Text = books_authos.ToString();
 
 
-                label4.Text = "all copies we have   ";
-                double books_Tcopies = cn.Books.Select(e => e.TotalCopies).Sum();
-                textbox4.Text = books_Tcopies.ToString();
+                label3.Text = "all copies we have   ";
+                float books_Tcopies = cn.Books.Select(e => e.TotalCopies).Sum();
+                textbox3.Text = books_Tcopies.ToString();
 
 
 
-                label5.Text = "Number of available copies";
-                double books_availablecopies = cn.Books.Select(e => e.AvailableCopies).Sum();
+                label4.Text = "Number of available copies";
+                float books_availablecopies = cn.Books.Select(e => e.AvailableCopies).Sum();
                 if (books_Tcopies < books_availablecopies)
                 {
                     books_availablecopies = books_Tcopies;
 
                 }
-                textBox5.Text = books_availablecopies.ToString();
+                textbox4.Text = books_availablecopies.ToString();
 
 
 
@@ -128,9 +113,9 @@ namespace WinFormsApp1
 
                 try
                 {
-                    double result = ((books_availablecopies / books_Tcopies) * 100);
+                    float result = (books_availablecopies / books_Tcopies) * 100f;
 
-                    resulttextbox.Text = result.ToString() + "%";
+                    resulttextbox.Text = result.ToString("N2") + "%";
                 }
                 catch (Exception ex)
                 {

@@ -14,6 +14,7 @@ namespace WinFormsApp1
     public partial class BookDetailForm : Form
     {
         internal static int bookID;
+        public event EventHandler? ButtonClicked;
 
         public BookDetailForm()
         {
@@ -79,6 +80,12 @@ namespace WinFormsApp1
             BorrowingBookForm fe = new BorrowingBookForm();
             fe.ButtonClicked += new EventHandler(EditBookForm_ButtonClicked);
             fe.ShowDialog(this);
+        }
+
+        private void BookDetailForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if (ButtonClicked != null)
+                ButtonClicked(this, e);
         }
     }
 }

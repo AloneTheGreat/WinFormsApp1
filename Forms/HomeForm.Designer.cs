@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             menuStrip = new MenuStrip();
             booksToolStripMenuItem = new ToolStripMenuItem();
             usersToolStripMenuItem = new ToolStripMenuItem();
@@ -48,27 +49,36 @@
             // 
             // booksToolStripMenuItem
             // 
+            booksToolStripMenuItem.BackColor = Color.Transparent;
+            booksToolStripMenuItem.Image = Properties.Resources.icon_book;
+            booksToolStripMenuItem.ImageTransparentColor = Color.Transparent;
             booksToolStripMenuItem.Name = "booksToolStripMenuItem";
-            booksToolStripMenuItem.Size = new Size(51, 20);
+            booksToolStripMenuItem.Size = new Size(67, 20);
             booksToolStripMenuItem.Text = "Books";
             booksToolStripMenuItem.Click += booksToolStripMenuItem_Click;
             // 
             // usersToolStripMenuItem
             // 
+            usersToolStripMenuItem.BackColor = Color.Transparent;
+            usersToolStripMenuItem.Image = Properties.Resources.kisspng_multi_user_end_user_users_group_information_5ae2558e385407_3783369715247824782307;
             usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            usersToolStripMenuItem.Size = new Size(47, 20);
+            usersToolStripMenuItem.Size = new Size(63, 20);
             usersToolStripMenuItem.Text = "Users";
             usersToolStripMenuItem.Click += usersToolStripMenuItem_Click;
             // 
             // statisticsToolStripMenuItem
             // 
+            statisticsToolStripMenuItem.BackColor = Color.Transparent;
+            statisticsToolStripMenuItem.Image = Properties.Resources.statistics_512;
             statisticsToolStripMenuItem.Name = "statisticsToolStripMenuItem";
-            statisticsToolStripMenuItem.Size = new Size(65, 20);
+            statisticsToolStripMenuItem.Size = new Size(81, 20);
             statisticsToolStripMenuItem.Text = "Statistics";
             statisticsToolStripMenuItem.Click += statisticsToolStripMenuItem_Click;
             // 
             // panel1
             // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.BackgroundImageLayout = ImageLayout.Center;
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 24);
             panel1.Name = "panel1";

@@ -42,10 +42,10 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.Green;
+            button1.BackColor = Color.SeaGreen;
             button1.FlatAppearance.BorderSize = 0;
-            button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button1.FlatAppearance.MouseDownBackColor = Color.White;
+            button1.FlatAppearance.MouseOverBackColor = Color.SeaGreen;
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             button1.ForeColor = Color.Transparent;
@@ -62,7 +62,7 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(96, 152);
+            label1.Location = new Point(96, 162);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(195, 24);
@@ -74,12 +74,11 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(96, 152);
+            label2.Location = new Point(96, 176);
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
-            label2.Size = new Size(195, 24);
+            label2.Size = new Size(0, 24);
             label2.TabIndex = 2;
-            label2.Text = "Login Your Account";
             label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // txtUserName
@@ -128,11 +127,12 @@
             // pictureBox1
             // 
             pictureBox1.BackColor = Color.Transparent;
-            pictureBox1.ImageLocation = "F:\\computer science\\iti\\C# Project\\WinFormsApp1\\Resources\\login.png";
-            pictureBox1.Location = new Point(125, 21);
+            pictureBox1.Image = Properties.Resources.kindpng_2351000;
+            pictureBox1.ImageLocation = "";
+            pictureBox1.Location = new Point(124, 12);
             pictureBox1.Margin = new Padding(4, 3, 4, 3);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(131, 128);
+            pictureBox1.Size = new Size(141, 137);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             bindingSource1 = new BindingSource(components);
             grdBooks = new DataGridView();
             panel1 = new Panel();
@@ -47,6 +48,8 @@
             grdBooks.Dock = DockStyle.Fill;
             grdBooks.Location = new Point(0, 57);
             grdBooks.Name = "grdBooks";
+            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            grdBooks.RowsDefaultCellStyle = dataGridViewCellStyle1;
             grdBooks.RowTemplate.Height = 25;
             grdBooks.Size = new Size(800, 393);
             grdBooks.TabIndex = 4;
