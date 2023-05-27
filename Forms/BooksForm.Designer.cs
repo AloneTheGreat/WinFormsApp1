@@ -50,12 +50,13 @@
             grdBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdBooks.Dock = DockStyle.Fill;
             grdBooks.Location = new Point(0, 57);
+            grdBooks.MultiSelect = false;
             grdBooks.Name = "grdBooks";
-            dataGridViewCellStyle1.BackColor = Color.Transparent;
+            dataGridViewCellStyle1.BackColor = Color.WhiteSmoke;
             grdBooks.RowsDefaultCellStyle = dataGridViewCellStyle1;
             grdBooks.RowTemplate.Height = 25;
             grdBooks.Size = new Size(800, 393);
-            grdBooks.TabIndex = 4;
+            grdBooks.TabIndex = 0;
             grdBooks.RowHeaderMouseDoubleClick += GrdBooks_RowHeaderMouseDoubleClick;
             // 
             // panel1
@@ -68,7 +69,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 57);
-            panel1.TabIndex = 5;
+            panel1.TabIndex = 0;
             // 
             // btnAddBook
             // 
@@ -81,7 +82,7 @@
             btnAddBook.Location = new Point(699, 12);
             btnAddBook.Name = "btnAddBook";
             btnAddBook.Size = new Size(89, 33);
-            btnAddBook.TabIndex = 7;
+            btnAddBook.TabIndex = 3;
             btnAddBook.Text = "Add book ";
             btnAddBook.UseVisualStyleBackColor = false;
             btnAddBook.Click += BtnAddBook_Click;
@@ -95,7 +96,7 @@
             categories.Location = new Point(28, 18);
             categories.Name = "categories";
             categories.Size = new Size(192, 23);
-            categories.TabIndex = 6;
+            categories.TabIndex = 1;
             categories.SelectedIndexChanged += categories_SelectedIndexChanged;
             // 
             // txtSearch
@@ -105,7 +106,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Search";
             txtSearch.Size = new Size(203, 23);
-            txtSearch.TabIndex = 4;
+            txtSearch.TabIndex = 2;
             txtSearch.TextChanged += TxtSearch_TextChanged;
             // 
             // BooksForm

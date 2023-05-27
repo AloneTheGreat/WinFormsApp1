@@ -50,7 +50,7 @@
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(88, 20);
-            label4.TabIndex = 7;
+            label4.TabIndex = 0;
             label4.Text = "National ID";
             // 
             // SSN
@@ -60,7 +60,7 @@
             SSN.Multiline = true;
             SSN.Name = "SSN";
             SSN.Size = new Size(262, 22);
-            SSN.TabIndex = 5;
+            SSN.TabIndex = 2;
             // 
             // label3
             // 
@@ -71,7 +71,7 @@
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(89, 20);
-            label3.TabIndex = 8;
+            label3.TabIndex = 0;
             label3.Text = "User Name";
             // 
             // newusername
@@ -81,7 +81,7 @@
             newusername.Multiline = true;
             newusername.Name = "newusername";
             newusername.Size = new Size(262, 22);
-            newusername.TabIndex = 6;
+            newusername.TabIndex = 1;
             // 
             // CreateNewUser
             // 
@@ -96,7 +96,7 @@
             CreateNewUser.Margin = new Padding(4, 3, 4, 3);
             CreateNewUser.Name = "CreateNewUser";
             CreateNewUser.Size = new Size(262, 40);
-            CreateNewUser.TabIndex = 9;
+            CreateNewUser.TabIndex = 5;
             CreateNewUser.Text = "Create ";
             CreateNewUser.UseVisualStyleBackColor = false;
             CreateNewUser.Click += button1_Click;
@@ -116,7 +116,7 @@
             phonetext.Multiline = true;
             phonetext.Name = "phonetext";
             phonetext.Size = new Size(262, 22);
-            phonetext.TabIndex = 5;
+            phonetext.TabIndex = 3;
             // 
             // Emailtext
             // 
@@ -125,7 +125,7 @@
             Emailtext.Multiline = true;
             Emailtext.Name = "Emailtext";
             Emailtext.Size = new Size(262, 22);
-            Emailtext.TabIndex = 5;
+            Emailtext.TabIndex = 4;
             // 
             // label2
             // 
@@ -136,7 +136,7 @@
             label2.Margin = new Padding(4, 0, 4, 0);
             label2.Name = "label2";
             label2.Size = new Size(115, 20);
-            label2.TabIndex = 8;
+            label2.TabIndex = 0;
             label2.Text = "Phone Number";
             // 
             // label5
@@ -148,7 +148,7 @@
             label5.Margin = new Padding(4, 0, 4, 0);
             label5.Name = "label5";
             label5.Size = new Size(48, 20);
-            label5.TabIndex = 8;
+            label5.TabIndex = 0;
             label5.Text = "Email";
             // 
             // lblAddError

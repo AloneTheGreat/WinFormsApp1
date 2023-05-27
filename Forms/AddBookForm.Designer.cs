@@ -84,7 +84,7 @@
             label1.Location = new Point(44, 44);
             label1.Name = "label1";
             label1.Size = new Size(59, 15);
-            label1.TabIndex = 5;
+            label1.TabIndex = 0;
             label1.Text = "Book Title";
             // 
             // label2
@@ -93,7 +93,7 @@
             label2.Location = new Point(44, 97);
             label2.Name = "label2";
             label2.Size = new Size(74, 15);
-            label2.TabIndex = 6;
+            label2.TabIndex = 0;
             label2.Text = "Book Author";
             // 
             // label3
@@ -102,7 +102,7 @@
             label3.Location = new Point(44, 152);
             label3.Name = "label3";
             label3.Size = new Size(32, 15);
-            label3.TabIndex = 7;
+            label3.TabIndex = 0;
             label3.Text = "ISBN";
             // 
             // label4
@@ -111,7 +111,7 @@
             label4.Location = new Point(44, 205);
             label4.Name = "label4";
             label4.Size = new Size(55, 15);
-            label4.TabIndex = 8;
+            label4.TabIndex = 0;
             label4.Text = "Category";
             // 
             // label5
@@ -120,7 +120,7 @@
             label5.Location = new Point(44, 260);
             label5.Name = "label5";
             label5.Size = new Size(65, 15);
-            label5.TabIndex = 9;
+            label5.TabIndex = 0;
             label5.Text = "No. Copies";
             // 
             // btnSaveAdd
@@ -132,7 +132,7 @@
             btnSaveAdd.Location = new Point(327, 459);
             btnSaveAdd.Name = "btnSaveAdd";
             btnSaveAdd.Size = new Size(145, 46);
-            btnSaveAdd.TabIndex = 10;
+            btnSaveAdd.TabIndex = 7;
             btnSaveAdd.Text = "Add Book";
             btnSaveAdd.UseVisualStyleBackColor = false;
             btnSaveAdd.Click += BtnSaveAdd_Click;
@@ -143,7 +143,7 @@
             BKDes.Multiline = true;
             BKDes.Name = "BKDes";
             BKDes.Size = new Size(452, 65);
-            BKDes.TabIndex = 2;
+            BKDes.TabIndex = 5;
             // 
             // label6
             // 
@@ -151,7 +151,7 @@
             label6.Location = new Point(44, 330);
             label6.Name = "label6";
             label6.Size = new Size(67, 15);
-            label6.TabIndex = 7;
+            label6.TabIndex = 0;
             label6.Text = "Description";
             // 
             // BKNOS
@@ -159,7 +159,7 @@
             BKNOS.Location = new Point(181, 258);
             BKNOS.Name = "BKNOS";
             BKNOS.Size = new Size(120, 23);
-            BKNOS.TabIndex = 11;
+            BKNOS.TabIndex = 4;
             // 
             // lblImage
             // 
@@ -167,7 +167,7 @@
             lblImage.Location = new Point(44, 418);
             lblImage.Name = "lblImage";
             lblImage.Size = new Size(40, 15);
-            lblImage.TabIndex = 12;
+            lblImage.TabIndex = 0;
             lblImage.Text = "Image";
             // 
             // btnBrowse
@@ -176,7 +176,7 @@
             btnBrowse.Location = new Point(181, 407);
             btnBrowse.Name = "btnBrowse";
             btnBrowse.Size = new Size(82, 37);
-            btnBrowse.TabIndex = 13;
+            btnBrowse.TabIndex = 6;
             btnBrowse.Text = "Browse";
             btnBrowse.UseVisualStyleBackColor = true;
             btnBrowse.Click += btnBrowse_Click;
@@ -193,7 +193,7 @@
             lblAddError.Location = new Point(327, 517);
             lblAddError.Name = "lblAddError";
             lblAddError.Size = new Size(32, 13);
-            lblAddError.TabIndex = 14;
+            lblAddError.TabIndex = 0;
             lblAddError.Text = "Error";
             lblAddError.Visible = false;
             // 

@@ -38,6 +38,9 @@
             // 
             // grdUser
             // 
+            grdUser.AllowUserToAddRows = false;
+            grdUser.AllowUserToDeleteRows = false;
+            grdUser.AllowUserToResizeRows = false;
             grdUser.BackgroundColor = Color.WhiteSmoke;
             grdUser.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdUser.Dock = DockStyle.Fill;
@@ -57,7 +60,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 54);
-            panel1.TabIndex = 3;
+            panel1.TabIndex = 0;
             // 
             // btnAddUser
             // 
@@ -69,7 +72,7 @@
             btnAddUser.Location = new Point(707, 12);
             btnAddUser.Name = "btnAddUser";
             btnAddUser.Size = new Size(81, 30);
-            btnAddUser.TabIndex = 4;
+            btnAddUser.TabIndex = 2;
             btnAddUser.Text = "Add User";
             btnAddUser.UseVisualStyleBackColor = false;
             btnAddUser.Click += btnAddUser_Click;
@@ -81,7 +84,7 @@
             txtSearch.Name = "txtSearch";
             txtSearch.PlaceholderText = "Search";
             txtSearch.Size = new Size(331, 23);
-            txtSearch.TabIndex = 2;
+            txtSearch.TabIndex = 1;
             txtSearch.Tag = "";
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 

@@ -53,7 +53,7 @@
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(262, 40);
-            button1.TabIndex = 0;
+            button1.TabIndex = 3;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -66,7 +66,7 @@
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
             label1.Size = new Size(195, 24);
-            label1.TabIndex = 2;
+            label1.TabIndex = 0;
             label1.Text = "Login Your Account";
             label1.TextAlign = ContentAlignment.TopCenter;
             // 
@@ -88,7 +88,7 @@
             txtUserName.Multiline = true;
             txtUserName.Name = "txtUserName";
             txtUserName.Size = new Size(262, 22);
-            txtUserName.TabIndex = 3;
+            txtUserName.TabIndex = 1;
             // 
             // label3
             // 
@@ -99,7 +99,7 @@
             label3.Margin = new Padding(4, 0, 4, 0);
             label3.Name = "label3";
             label3.Size = new Size(89, 20);
-            label3.TabIndex = 4;
+            label3.TabIndex = 0;
             label3.Text = "User Name";
             // 
             // txtPassword
@@ -110,7 +110,7 @@
             txtPassword.Name = "txtPassword";
             txtPassword.PasswordChar = '*';
             txtPassword.Size = new Size(262, 22);
-            txtPassword.TabIndex = 3;
+            txtPassword.TabIndex = 2;
             // 
             // label4
             // 
@@ -121,7 +121,7 @@
             label4.Margin = new Padding(4, 0, 4, 0);
             label4.Name = "label4";
             label4.Size = new Size(78, 20);
-            label4.TabIndex = 4;
+            label4.TabIndex = 0;
             label4.Text = "Password";
             // 
             // pictureBox1
@@ -145,7 +145,7 @@
             lblErrorMessage.Location = new Point(61, 421);
             lblErrorMessage.Name = "lblErrorMessage";
             lblErrorMessage.Size = new Size(32, 13);
-            lblErrorMessage.TabIndex = 6;
+            lblErrorMessage.TabIndex = 0;
             lblErrorMessage.Text = "Error";
             lblErrorMessage.Visible = false;
             // 

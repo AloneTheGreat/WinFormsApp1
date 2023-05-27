@@ -64,7 +64,7 @@
             btnSave.Location = new Point(275, 371);
             btnSave.Name = "btnSave";
             btnSave.Size = new Size(126, 55);
-            btnSave.TabIndex = 34;
+            btnSave.TabIndex = 7;
             btnSave.Text = "SaveChanges";
             btnSave.UseVisualStyleBackColor = false;
             btnSave.Click += button1_Click;
@@ -75,7 +75,7 @@
             label5.Location = new Point(67, 230);
             label5.Name = "label5";
             label5.Size = new Size(75, 15);
-            label5.TabIndex = 33;
+            label5.TabIndex = 0;
             label5.Text = "Total copies :";
             // 
             // lblAuthor
@@ -84,7 +84,7 @@
             lblAuthor.Location = new Point(67, 69);
             lblAuthor.Name = "lblAuthor";
             lblAuthor.Size = new Size(80, 15);
-            lblAuthor.TabIndex = 30;
+            lblAuthor.TabIndex = 0;
             lblAuthor.Text = "Book Author :";
             // 
             // lblTitle
@@ -93,7 +93,7 @@
             lblTitle.Location = new Point(67, 23);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(65, 15);
-            lblTitle.TabIndex = 29;
+            lblTitle.TabIndex = 0;
             lblTitle.Text = "Book Title :";
             // 
             // txtAuthor
@@ -101,21 +101,21 @@
             txtAuthor.Location = new Point(191, 69);
             txtAuthor.Name = "txtAuthor";
             txtAuthor.Size = new Size(452, 23);
-            txtAuthor.TabIndex = 25;
+            txtAuthor.TabIndex = 2;
             // 
             // txtTitle
             // 
             txtTitle.Location = new Point(191, 23);
             txtTitle.Name = "txtTitle";
             txtTitle.Size = new Size(452, 23);
-            txtTitle.TabIndex = 24;
+            txtTitle.TabIndex = 1;
             // 
             // txtDescription
             // 
             txtDescription.Location = new Point(191, 115);
             txtDescription.Name = "txtDescription";
             txtDescription.Size = new Size(452, 96);
-            txtDescription.TabIndex = 35;
+            txtDescription.TabIndex = 3;
             txtDescription.Text = "";
             // 
             // lblDescription
@@ -124,7 +124,7 @@
             lblDescription.Location = new Point(67, 115);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(102, 15);
-            lblDescription.TabIndex = 36;
+            lblDescription.TabIndex = 0;
             lblDescription.Text = "Book description :";
             // 
             // lblImage
@@ -133,7 +133,7 @@
             lblImage.Location = new Point(67, 327);
             lblImage.Name = "lblImage";
             lblImage.Size = new Size(46, 15);
-            lblImage.TabIndex = 37;
+            lblImage.TabIndex = 0;
             lblImage.Text = "Image :";
             // 
             // lblError
@@ -144,7 +144,7 @@
             lblError.Location = new Point(275, 429);
             lblError.Name = "lblError";
             lblError.Size = new Size(32, 13);
-            lblError.TabIndex = 39;
+            lblError.TabIndex = 0;
             lblError.Text = "Error";
             lblError.Visible = false;
             // 
@@ -153,7 +153,7 @@
             nudTotalCopies.Location = new Point(191, 230);
             nudTotalCopies.Name = "nudTotalCopies";
             nudTotalCopies.Size = new Size(120, 23);
-            nudTotalCopies.TabIndex = 40;
+            nudTotalCopies.TabIndex = 4;
             // 
             // lblCategory
             // 
@@ -161,7 +161,7 @@
             lblCategory.Location = new Point(67, 273);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(61, 15);
-            lblCategory.TabIndex = 41;
+            lblCategory.TabIndex = 0;
             lblCategory.Text = "Category :";
             // 
             // cbCategory
@@ -171,14 +171,14 @@
             cbCategory.Location = new Point(191, 273);
             cbCategory.Name = "cbCategory";
             cbCategory.Size = new Size(121, 23);
-            cbCategory.TabIndex = 42;
+            cbCategory.TabIndex = 5;
             // 
             // btnBrowse
             // 
             btnBrowse.Location = new Point(191, 327);
             btnBrowse.Name = "btnBrowse";
             btnBrowse.Size = new Size(75, 23);
-            btnBrowse.TabIndex = 43;
+            btnBrowse.TabIndex = 6;
             btnBrowse.Text = "Browse";
             btnBrowse.UseVisualStyleBackColor = true;
             btnBrowse.Click += btnBrowse_Click;

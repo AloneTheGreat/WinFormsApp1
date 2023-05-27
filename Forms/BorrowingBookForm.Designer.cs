@@ -45,7 +45,7 @@
             lblPeriod.Margin = new Padding(4, 0, 4, 0);
             lblPeriod.Name = "lblPeriod";
             lblPeriod.Size = new Size(96, 20);
-            lblPeriod.TabIndex = 11;
+            lblPeriod.TabIndex = 0;
             lblPeriod.Text = "Period (Day)";
             // 
             // lblUser
@@ -57,7 +57,7 @@
             lblUser.Margin = new Padding(4, 0, 4, 0);
             lblUser.Name = "lblUser";
             lblUser.Size = new Size(43, 20);
-            lblUser.TabIndex = 12;
+            lblUser.TabIndex = 0;
             lblUser.Text = "User";
             // 
             // cbUser
@@ -67,7 +67,7 @@
             cbUser.Margin = new Padding(4, 3, 4, 3);
             cbUser.Name = "cbUser";
             cbUser.Size = new Size(131, 23);
-            cbUser.TabIndex = 13;
+            cbUser.TabIndex = 1;
             // 
             // btnBorrow
             // 
@@ -82,7 +82,7 @@
             btnBorrow.Margin = new Padding(4, 3, 4, 3);
             btnBorrow.Name = "btnBorrow";
             btnBorrow.Size = new Size(92, 37);
-            btnBorrow.TabIndex = 14;
+            btnBorrow.TabIndex = 3;
             btnBorrow.Text = "Borrow";
             btnBorrow.UseVisualStyleBackColor = false;
             btnBorrow.Click += btnBorrow_Click;
@@ -93,7 +93,7 @@
             nudPeriod.Maximum = new decimal(new int[] { 14, 0, 0, 0 });
             nudPeriod.Name = "nudPeriod";
             nudPeriod.Size = new Size(131, 23);
-            nudPeriod.TabIndex = 15;
+            nudPeriod.TabIndex = 2;
             // 
             // BorrowingBookForm
             // 

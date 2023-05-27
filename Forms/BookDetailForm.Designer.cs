@@ -88,7 +88,7 @@
             label1.Location = new Point(204, 47);
             label1.Name = "label1";
             label1.Size = new Size(50, 15);
-            label1.TabIndex = 4;
+            label1.TabIndex = 0;
             label1.Text = "Author :";
             // 
             // cover
@@ -106,7 +106,7 @@
             label3.Location = new Point(204, 12);
             label3.Name = "label3";
             label3.Size = new Size(35, 15);
-            label3.TabIndex = 4;
+            label3.TabIndex = 0;
             label3.Text = "Title :";
             // 
             // label5
@@ -115,7 +115,7 @@
             label5.Location = new Point(204, 86);
             label5.Name = "label5";
             label5.Size = new Size(73, 15);
-            label5.TabIndex = 4;
+            label5.TabIndex = 0;
             label5.Text = "Description :";
             // 
             // label9
@@ -124,7 +124,7 @@
             label9.Location = new Point(204, 125);
             label9.Name = "label9";
             label9.Size = new Size(61, 15);
-            label9.TabIndex = 4;
+            label9.TabIndex = 0;
             label9.Text = "Gategory :";
             // 
             // label11
@@ -133,7 +133,7 @@
             label11.Location = new Point(204, 231);
             label11.Name = "label11";
             label11.Size = new Size(100, 15);
-            label11.TabIndex = 4;
+            label11.TabIndex = 0;
             label11.Text = "Available Copies :";
             // 
             // label12
@@ -142,7 +142,7 @@
             label12.Location = new Point(204, 196);
             label12.Name = "label12";
             label12.Size = new Size(91, 15);
-            label12.TabIndex = 4;
+            label12.TabIndex = 0;
             label12.Text = "Total of Copies :";
             // 
             // label15
@@ -151,7 +151,7 @@
             label15.Location = new Point(204, 161);
             label15.Name = "label15";
             label15.Size = new Size(38, 15);
-            label15.TabIndex = 4;
+            label15.TabIndex = 0;
             label15.Text = "ISBN :";
             // 
             // BDTitle
@@ -160,7 +160,7 @@
             BDTitle.Name = "BDTitle";
             BDTitle.ReadOnly = true;
             BDTitle.Size = new Size(176, 23);
-            BDTitle.TabIndex = 7;
+            BDTitle.TabIndex = 0;
             // 
             // BDAuthor
             // 
@@ -168,7 +168,7 @@
             BDAuthor.Name = "BDAuthor";
             BDAuthor.ReadOnly = true;
             BDAuthor.Size = new Size(176, 23);
-            BDAuthor.TabIndex = 7;
+            BDAuthor.TabIndex = 0;
             // 
             // BDDescription
             // 
@@ -176,7 +176,7 @@
             BDDescription.Name = "BDDescription";
             BDDescription.ReadOnly = true;
             BDDescription.Size = new Size(176, 23);
-            BDDescription.TabIndex = 7;
+            BDDescription.TabIndex = 0;
             // 
             // BDGategory
             // 
@@ -184,7 +184,7 @@
             BDGategory.Name = "BDGategory";
             BDGategory.ReadOnly = true;
             BDGategory.Size = new Size(176, 23);
-            BDGategory.TabIndex = 7;
+            BDGategory.TabIndex = 0;
             // 
             // BDISBAN
             // 
@@ -192,7 +192,7 @@
             BDISBAN.Name = "BDISBAN";
             BDISBAN.ReadOnly = true;
             BDISBAN.Size = new Size(176, 23);
-            BDISBAN.TabIndex = 7;
+            BDISBAN.TabIndex = 0;
             // 
             // BDtotalcopies
             // 
@@ -200,7 +200,7 @@
             BDtotalcopies.Name = "BDtotalcopies";
             BDtotalcopies.ReadOnly = true;
             BDtotalcopies.Size = new Size(176, 23);
-            BDtotalcopies.TabIndex = 7;
+            BDtotalcopies.TabIndex = 0;
             // 
             // BDAvailable
             // 
@@ -208,7 +208,7 @@
             BDAvailable.Name = "BDAvailable";
             BDAvailable.ReadOnly = true;
             BDAvailable.Size = new Size(176, 23);
-            BDAvailable.TabIndex = 7;
+            BDAvailable.TabIndex = 0;
             // 
             // BookDetailForm
             // 

@@ -44,7 +44,7 @@
             menuStrip.Location = new Point(0, 0);
             menuStrip.Name = "menuStrip";
             menuStrip.Size = new Size(800, 24);
-            menuStrip.TabIndex = 0;
+            menuStrip.TabIndex = 1;
             menuStrip.Text = "menuStrip";
             // 
             // booksToolStripMenuItem
@@ -83,7 +83,7 @@
             panel1.Location = new Point(0, 24);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 426);
-            panel1.TabIndex = 2;
+            panel1.TabIndex = 0;
             // 
             // HomeForm
             // 

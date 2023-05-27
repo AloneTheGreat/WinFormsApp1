@@ -58,7 +58,7 @@
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(800, 52);
-            panel1.TabIndex = 1;
+            panel1.TabIndex = 0;
             // 
             // button2
             // 
@@ -68,7 +68,7 @@
             button2.Margin = new Padding(4, 3, 4, 3);
             button2.Name = "button2";
             button2.Size = new Size(154, 27);
-            button2.TabIndex = 1;
+            button2.TabIndex = 2;
             button2.Text = "Book";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -81,7 +81,7 @@
             button1.Margin = new Padding(4, 3, 4, 3);
             button1.Name = "button1";
             button1.Size = new Size(154, 27);
-            button1.TabIndex = 2;
+            button1.TabIndex = 1;
             button1.Text = "USER";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -108,7 +108,7 @@
             panel2.Location = new Point(0, 52);
             panel2.Name = "panel2";
             panel2.Size = new Size(800, 398);
-            panel2.TabIndex = 2;
+            panel2.TabIndex = 0;
             // 
             // resulttextbox
             // 
@@ -116,7 +116,7 @@
             resulttextbox.Name = "resulttextbox";
             resulttextbox.ReadOnly = true;
             resulttextbox.Size = new Size(100, 23);
-            resulttextbox.TabIndex = 13;
+            resulttextbox.TabIndex = 0;
             resulttextbox.Visible = false;
             // 
             // label7
@@ -125,7 +125,7 @@
             label7.Location = new Point(484, 331);
             label7.Name = "label7";
             label7.Size = new Size(38, 15);
-            label7.TabIndex = 12;
+            label7.TabIndex = 0;
             label7.Text = "label7";
             label7.Visible = false;
             // 
@@ -135,7 +135,7 @@
             textBox5.Name = "textBox5";
             textBox5.ReadOnly = true;
             textBox5.Size = new Size(100, 23);
-            textBox5.TabIndex = 10;
+            textBox5.TabIndex = 0;
             textBox5.Visible = false;
             // 
             // label6
@@ -144,7 +144,7 @@
             label6.Location = new Point(76, 332);
             label6.Name = "label6";
             label6.Size = new Size(38, 15);
-            label6.TabIndex = 9;
+            label6.TabIndex = 0;
             label6.Text = "label6";
             label6.Visible = false;
             // 
@@ -154,7 +154,7 @@
             label5.Location = new Point(76, 273);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
-            label5.TabIndex = 8;
+            label5.TabIndex = 0;
             label5.Text = "label5";
             label5.Visible = false;
             // 
@@ -164,7 +164,7 @@
             label4.Location = new Point(76, 217);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
-            label4.TabIndex = 7;
+            label4.TabIndex = 0;
             label4.Text = "label4";
             label4.Visible = false;
             // 
@@ -174,7 +174,7 @@
             label3.Location = new Point(76, 156);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
-            label3.TabIndex = 6;
+            label3.TabIndex = 0;
             label3.Text = "label3";
             label3.Visible = false;
             // 
@@ -184,7 +184,7 @@
             textbox4.Name = "textbox4";
             textbox4.ReadOnly = true;
             textbox4.Size = new Size(100, 23);
-            textbox4.TabIndex = 5;
+            textbox4.TabIndex = 0;
             textbox4.Visible = false;
             // 
             // textbox3
@@ -193,7 +193,7 @@
             textbox3.Name = "textbox3";
             textbox3.ReadOnly = true;
             textbox3.Size = new Size(100, 23);
-            textbox3.TabIndex = 4;
+            textbox3.TabIndex = 0;
             textbox3.Visible = false;
             // 
             // textbox2
@@ -202,7 +202,7 @@
             textbox2.Name = "textbox2";
             textbox2.ReadOnly = true;
             textbox2.Size = new Size(100, 23);
-            textbox2.TabIndex = 3;
+            textbox2.TabIndex = 0;
             textbox2.Visible = false;
             // 
             // label2
@@ -211,7 +211,7 @@
             label2.Location = new Point(76, 88);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
-            label2.TabIndex = 2;
+            label2.TabIndex = 0;
             label2.Text = "label2";
             label2.Visible = false;
             // 
@@ -221,7 +221,7 @@
             label1.Location = new Point(76, 37);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
-            label1.TabIndex = 1;
+            label1.TabIndex = 0;
             label1.Text = "label1";
             label1.Visible = false;
             // 

@@ -40,7 +40,7 @@
             nudCopies.Location = new Point(38, 52);
             nudCopies.Name = "nudCopies";
             nudCopies.Size = new Size(157, 23);
-            nudCopies.TabIndex = 0;
+            nudCopies.TabIndex = 1;
             // 
             // label1
             // 
@@ -48,7 +48,7 @@
             label1.Location = new Point(38, 23);
             label1.Name = "label1";
             label1.Size = new Size(157, 15);
-            label1.TabIndex = 1;
+            label1.TabIndex = 0;
             label1.Text = "Number of Copies to Delete:";
             // 
             // btnDelete
@@ -73,7 +73,7 @@
             label2.Location = new Point(38, 144);
             label2.Name = "label2";
             label2.Size = new Size(38, 13);
-            label2.TabIndex = 3;
+            label2.TabIndex = 0;
             label2.Text = "label2";
             label2.Visible = false;
             // 

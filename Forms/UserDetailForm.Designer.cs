@@ -69,7 +69,7 @@
             lblName.Location = new Point(27, 21);
             lblName.Name = "lblName";
             lblName.Size = new Size(45, 15);
-            lblName.TabIndex = 1;
+            lblName.TabIndex = 0;
             lblName.Text = "Name :";
             // 
             // lblEmail
@@ -78,7 +78,7 @@
             lblEmail.Location = new Point(27, 57);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(42, 15);
-            lblEmail.TabIndex = 2;
+            lblEmail.TabIndex = 0;
             lblEmail.Text = "Email :";
             // 
             // lblSSN
@@ -87,7 +87,7 @@
             lblSSN.Location = new Point(323, 21);
             lblSSN.Name = "lblSSN";
             lblSSN.Size = new Size(34, 15);
-            lblSSN.TabIndex = 3;
+            lblSSN.TabIndex = 0;
             lblSSN.Text = "SSN :";
             // 
             // lblPhone
@@ -96,7 +96,7 @@
             lblPhone.Location = new Point(323, 57);
             lblPhone.Name = "lblPhone";
             lblPhone.Size = new Size(47, 15);
-            lblPhone.TabIndex = 4;
+            lblPhone.TabIndex = 0;
             lblPhone.Text = "Phone :";
             // 
             // txtName
@@ -105,7 +105,7 @@
             txtName.Name = "txtName";
             txtName.ReadOnly = true;
             txtName.Size = new Size(174, 23);
-            txtName.TabIndex = 5;
+            txtName.TabIndex = 0;
             // 
             // txtEmail
             // 
@@ -113,7 +113,7 @@
             txtEmail.Name = "txtEmail";
             txtEmail.ReadOnly = true;
             txtEmail.Size = new Size(174, 23);
-            txtEmail.TabIndex = 6;
+            txtEmail.TabIndex = 0;
             // 
             // txtSSN
             // 
@@ -121,7 +121,7 @@
             txtSSN.Name = "txtSSN";
             txtSSN.ReadOnly = true;
             txtSSN.Size = new Size(174, 23);
-            txtSSN.TabIndex = 7;
+            txtSSN.TabIndex = 0;
             // 
             // txtPhone
             // 
@@ -129,7 +129,7 @@
             txtPhone.Name = "txtPhone";
             txtPhone.ReadOnly = true;
             txtPhone.Size = new Size(174, 23);
-            txtPhone.TabIndex = 8;
+            txtPhone.TabIndex = 0;
             // 
             // UserDetailForm
             // 
