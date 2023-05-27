@@ -89,6 +89,8 @@
             // panel2
             // 
             panel2.BackColor = Color.WhiteSmoke;
+            panel2.BackgroundImage = Properties.Resources.statistics_512;
+            panel2.BackgroundImageLayout = ImageLayout.Center;
             panel2.Controls.Add(resulttextbox);
             panel2.Controls.Add(label7);
             panel2.Controls.Add(textBox5);

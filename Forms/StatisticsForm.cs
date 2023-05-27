@@ -41,7 +41,7 @@ namespace WinFormsApp1
             label1.Visible = true;
             label2.Visible = true;
 
-            textbox1.Visible = true; 
+            textbox1.Visible = true;
             textbox2.Visible = true;
 
 

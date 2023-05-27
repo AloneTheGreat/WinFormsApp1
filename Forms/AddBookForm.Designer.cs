@@ -71,6 +71,7 @@
             // 
             // BKCategory
             // 
+            BKCategory.DropDownStyle = ComboBoxStyle.DropDownList;
             BKCategory.FormattingEnabled = true;
             BKCategory.Location = new Point(181, 202);
             BKCategory.Name = "BKCategory";

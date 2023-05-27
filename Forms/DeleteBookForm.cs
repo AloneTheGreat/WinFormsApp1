@@ -33,15 +33,14 @@ namespace WinFormsApp1
                 book.AvailableCopies -= v;
                 cn.SaveChanges();
 
+                this.Close();
+
+                if (ButtonClicked != null)
+                    ButtonClicked(this, e);
+
             }
             else if (v == book.AvailableCopies)
             {
-                if ((book.TotalCopies - book.AvailableCopies) == 0)
-                {
-                    cn.Books.Remove(book);
-                    cn.SaveChanges();
-                }
-
                 book.TotalCopies -= v;
                 book.AvailableCopies = 0;
                 cn.SaveChanges();
@@ -50,7 +49,6 @@ namespace WinFormsApp1
 
                 if (ButtonClicked != null)
                     ButtonClicked(this, e);
-
             }
             else
             {

@@ -15,6 +15,7 @@ namespace WinFormsApp1.Models
 
         [DataType(DataType.EmailAddress)]
         [MaxLength(50)]
+        [EmailAddress]
         public string Email { get; set; }
 
         [MaxLength(50)]

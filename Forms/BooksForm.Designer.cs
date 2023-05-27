@@ -43,6 +43,9 @@
             // 
             // grdBooks
             // 
+            grdBooks.AllowUserToAddRows = false;
+            grdBooks.AllowUserToDeleteRows = false;
+            grdBooks.AllowUserToResizeRows = false;
             grdBooks.BackgroundColor = Color.WhiteSmoke;
             grdBooks.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             grdBooks.Dock = DockStyle.Fill;
@@ -86,12 +89,13 @@
             // categories
             // 
             categories.BackColor = Color.White;
+            categories.DropDownStyle = ComboBoxStyle.DropDownList;
+            categories.FlatStyle = FlatStyle.Flat;
             categories.FormattingEnabled = true;
             categories.Location = new Point(28, 18);
             categories.Name = "categories";
             categories.Size = new Size(192, 23);
             categories.TabIndex = 6;
-            categories.Text = "Categories";
             categories.SelectedIndexChanged += categories_SelectedIndexChanged;
             // 
             // txtSearch

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Entity.Validation;
 using System.Drawing;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
@@ -42,22 +43,30 @@ namespace WinFormsApp1
             }
             else
             {
-                AppContext cnn = new AppContext();
-                User newuser = new User()
+                try
                 {
-                    Name = username,
-                    SSN = ssn,
-                    Email = email,
-                    Phone = phone
+                    AppContext cnn = new AppContext();
+                    User newuser = new User()
+                    {
+                        Name = username,
+                        SSN = ssn,
+                        Email = email,
+                        Phone = phone
 
-                };
+                    };
 
-                cnn.Users.Add(newuser);
-                cnn.SaveChanges();
+                    cnn.Users.Add(newuser);
+                    cnn.SaveChanges();
 
-                this.Close();
-                if (ButtonClicked != null)
-                    ButtonClicked(this, e);
+                    this.Close();
+                    if (ButtonClicked != null)
+                        ButtonClicked(this, e);
+                }
+                catch (DbEntityValidationException ex)
+                {
+                    lblAddError.Text = ex.EntityValidationErrors.First().ValidationErrors.First().ErrorMessage;
+                    lblAddError.Visible = true;
+                }
             }
         }
 

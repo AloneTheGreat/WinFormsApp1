@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using WinFormsApp1.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ToolTip;
 
 namespace WinFormsApp1
 {
@@ -31,6 +32,7 @@ namespace WinFormsApp1
             modelBuilder.Entity<Book>().HasIndex(u => u.ISBN).IsUnique();
             modelBuilder.Entity<Book>().HasIndex(u => u.Title).IsUnique();
             modelBuilder.Entity<Category>().HasIndex(u => u.Name).IsUnique();
+
         }
     }
 }

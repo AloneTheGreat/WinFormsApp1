@@ -16,8 +16,6 @@ F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinForm
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\ref\WinFormsApp1.dll
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.HomeForm.resources
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.UserDetailForm.resources
-F:\computer science\iti\C# Project\WinFormsApp1\bin\Debug\net6.0-windows\CustomControls.dll
-F:\computer science\iti\C# Project\WinFormsApp1\bin\Debug\net6.0-windows\CustomControls.pdb
 F:\computer science\iti\C# Project\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.CopyComplete
 F:\computer science\iti\C# Project\WinFormsApp1\bin\Debug\net6.0-windows\EntityFramework.SqlServer.dll
 F:\computer science\iti\C# Project\WinFormsApp1\bin\Debug\net6.0-windows\EntityFramework.dll
