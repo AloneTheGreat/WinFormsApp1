@@ -33,7 +33,6 @@
             button1 = new Button();
             panel2 = new Panel();
             resulttextbox = new TextBox();
-            label7 = new Label();
             textBox5 = new TextBox();
             label6 = new Label();
             label5 = new Label();
@@ -92,7 +91,6 @@
             panel2.BackgroundImage = Properties.Resources.statistics_512;
             panel2.BackgroundImageLayout = ImageLayout.Center;
             panel2.Controls.Add(resulttextbox);
-            panel2.Controls.Add(label7);
             panel2.Controls.Add(textBox5);
             panel2.Controls.Add(label6);
             panel2.Controls.Add(label5);
@@ -118,16 +116,6 @@
             resulttextbox.Size = new Size(100, 23);
             resulttextbox.TabIndex = 0;
             resulttextbox.Visible = false;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Location = new Point(484, 331);
-            label7.Name = "label7";
-            label7.Size = new Size(38, 15);
-            label7.TabIndex = 0;
-            label7.Text = "label7";
-            label7.Visible = false;
             // 
             // textBox5
             // 
@@ -269,7 +257,6 @@
         private TextBox textBox5;
         private Label label6;
         private Label label5;
-        private Label label7;
         private TextBox resulttextbox;
     }
 }

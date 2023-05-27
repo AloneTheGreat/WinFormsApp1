@@ -54,6 +54,11 @@ namespace WinFormsApp1
                 button1.Enabled = false;
                 button3.Enabled = false;
             }
+            else
+            {
+                button1.Enabled = true;
+                button3.Enabled = true;
+            }
         }
 
         private void EditBookForm_ButtonClicked(object? sender, EventArgs e)

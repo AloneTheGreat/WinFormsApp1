@@ -26,7 +26,6 @@ namespace WinFormsApp1
             label4.Visible = false;
             label5.Visible = false;
             label6.Visible = false;
-            label7.Visible = false;
             textbox1.Visible = false;
             textbox2.Visible = false;
             textbox3.Visible = false;
@@ -53,7 +52,7 @@ namespace WinFormsApp1
                 label1.Text = "Number of users :";
                 textbox1.Text = usercount.ToString();
 
-                var userbook = cn.UserBooks.Count();
+                var userbook = cn.UserBooks.Select(u => u.User).Distinct().Count();
                 label2.Text = "Number of Active Users :";
                 textbox2.Text = userbook.ToString();
 
@@ -68,12 +67,14 @@ namespace WinFormsApp1
             label2.Visible = true;
             label3.Visible = true;
             label4.Visible = true;
+            label5.Visible = true;
             label6.Visible = true;
 
             textbox1.Visible = true;
             textbox2.Visible = true;
             textbox3.Visible = true;
             textbox4.Visible = true;
+            textBox5.Visible = true;
             resulttextbox.Visible = true;
 
 
@@ -99,31 +100,17 @@ namespace WinFormsApp1
 
                 label4.Text = "Number of available copies";
                 float books_availablecopies = cn.Books.Select(e => e.AvailableCopies).Sum();
-                if (books_Tcopies < books_availablecopies)
-                {
-                    books_availablecopies = books_Tcopies;
-
-                }
                 textbox4.Text = books_availablecopies.ToString();
 
 
+                label5.Text = "Number of borrowed copies";
+                float books_borrowedcopies = cn.UserBooks.Where(u => u.IsReturned == false).Count();
+                textBox5.Text = books_borrowedcopies.ToString();
 
 
                 label6.Text = "The current percentage of books available";
-
-                try
-                {
-                    float result = (books_availablecopies / books_Tcopies) * 100f;
-
-                    resulttextbox.Text = result.ToString("N2") + "%";
-                }
-                catch (Exception ex)
-                {
-                    label7.Visible = true;
-                    label7.Text = "there is no copies in library";
-
-
-                }
+                float result = (books_availablecopies / books_Tcopies) * 100f;
+                resulttextbox.Text = result.ToString("N2") + "%";
 
             }
         }

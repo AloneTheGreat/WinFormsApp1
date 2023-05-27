@@ -62,6 +62,7 @@
             // 
             // cbUser
             // 
+            cbUser.DropDownStyle = ComboBoxStyle.DropDownList;
             cbUser.FormattingEnabled = true;
             cbUser.Location = new Point(175, 10);
             cbUser.Margin = new Padding(4, 3, 4, 3);
@@ -90,10 +91,12 @@
             // nudPeriod
             // 
             nudPeriod.Location = new Point(175, 61);
-            nudPeriod.Maximum = new decimal(new int[] { 14, 0, 0, 0 });
+            nudPeriod.Maximum = new decimal(new int[] { 20, 0, 0, 0 });
+            nudPeriod.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             nudPeriod.Name = "nudPeriod";
             nudPeriod.Size = new Size(131, 23);
             nudPeriod.TabIndex = 2;
+            nudPeriod.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // BorrowingBookForm
             // 
