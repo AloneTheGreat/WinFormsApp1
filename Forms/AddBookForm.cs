@@ -3,15 +3,18 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using System.Data.Entity.Infrastructure;
 using System.Data.Entity.Validation;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.Intrinsics.X86;
 using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WinFormsApp1.Models;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace WinFormsApp1
 {
@@ -55,6 +58,16 @@ namespace WinFormsApp1
                     string path = btnBrowse.Text;
                     int categoryIndex = (int)BKCategory.SelectedValue;
                     Category category = context.Categories.Find(categoryIndex);
+                    
+                    var bookFromDB = (from s in context.Books
+                                      where s.ISBN == ISBN ||
+                                      s.Title == BookName
+                                      select s).ToList();
+                    if (bookFromDB.Any())
+                    {
+                        lblAddError.Text = "Book already exists";
+                        lblAddError.Visible = true;
+                    }
 
                     Book BK = new Book()
                     {
@@ -78,6 +91,11 @@ namespace WinFormsApp1
                 catch (DbEntityValidationException ex)
                 {
                     lblAddError.Text = ex.EntityValidationErrors.First().ValidationErrors.First().ErrorMessage;
+                    lblAddError.Visible = true;
+                }
+                catch (Exception ex)
+                {
+                    lblAddError.Text = ex.Message;
                     lblAddError.Visible = true;
                 }
             }

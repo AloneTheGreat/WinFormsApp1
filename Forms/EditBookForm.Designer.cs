@@ -215,16 +215,13 @@
         private Label label2;
         private Button btnSave;
         private Label label5;
-        private Label label4;
         private Label lblAuthor;
         private Label lblTitle;
-        private ComboBox comboBox2;
         private TextBox txtAuthor;
         private TextBox txtTitle;
         private RichTextBox txtDescription;
         private Label lblDescription;
         private Label lblImage;
-        private TextBox textBox4;
         private Label lblError;
         private NumericUpDown nudTotalCopies;
         private Label lblCategory;
